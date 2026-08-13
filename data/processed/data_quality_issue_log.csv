@@ -1,0 +1,19 @@
+issue_id,table_name,issue_type,affected_rows,action,final_result
+DQ0001,dim_customer,duplicate_primary_key,50,Keep first occurrence; quarantine later duplicate,50 row(s) excluded from the curated layer
+DQ0002,dim_customer,inconsistent_lead_source_text,166,Trim and case-normalize to approved lead-source values,Canonical categories restored
+DQ0003,dim_customer,missing_canton,200,Replace missing optional geography with explicit Unknown member,Rows retained; unknowns remain visible in reporting
+DQ0004,dim_dealer,dealer_name_whitespace,5,Trim leading and trailing whitespace,Dealer labels standardized
+DQ0005,dim_dealer,duplicate_primary_key,2,Keep first occurrence; quarantine later duplicate,2 row(s) excluded from the curated layer
+DQ0006,dim_vehicle,invalid_vehicle_domain,77,Quarantine values that cannot be corrected without inventing business data,77 row(s) excluded from the curated layer
+DQ0007,dim_vehicle,missing_fuel_type,333,Replace missing optional fuel type with explicit Unknown member,Rows retained without inventing a fuel classification
+DQ0008,dim_vehicle,negative_mileage_sign_error,76,Take absolute value only when magnitude remains inside the accepted domain,Plausible sign errors corrected and retained
+DQ0009,fact_inquiry,accepted_quote_removed_by_quality_rule,104,Downgrade conversion when its accepted quote is not loadable,Fact tables remain internally consistent; affected outcomes are not overstated
+DQ0010,fact_inquiry,duplicate_primary_key,150,Keep first occurrence; quarantine later duplicate,150 row(s) excluded from the curated layer
+DQ0011,fact_inquiry,invalid_inquiry_foreign_key,76,Quarantine orphan inquiry until the parent entity is repaired,76 row(s) excluded from the curated layer
+DQ0012,fact_inquiry,malformed_inquiry_date,111,Quarantine because time-series placement and date sequence are unknown,111 row(s) excluded from the curated layer
+DQ0013,fact_inquiry,winning_dealer_mismatch,48,Derive winner and final sale price from the single accepted quote,Commercial outcomes reconciled across both fact tables
+DQ0014,fact_quote,duplicate_primary_key,517,Keep first occurrence; quarantine later duplicate,517 row(s) excluded from the curated layer
+DQ0015,fact_quote,invalid_quote_domain,779,Quarantine malformed dates or impossible monetary amounts,779 row(s) excluded from the curated layer
+DQ0016,fact_quote,invalid_quote_foreign_key,973,Quarantine orphan quote until dealer or inquiry key is repaired,973 row(s) excluded from the curated layer
+DQ0017,fact_quote,missing_response_time,687,"Impute the dealer median, falling back to the portfolio median",Rows retained; imputation rule documented and reproducible
+DQ0018,fact_quote,quote_to_market_anomaly,1162,Retain plausible positive quote and set anomaly_flag for review,Outliers remain analytically visible without contaminating hard-validity checks

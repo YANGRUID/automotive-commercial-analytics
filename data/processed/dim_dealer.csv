@@ -1,0 +1,151 @@
+dealer_id,dealer_name,dealer_region,dealer_type,dealer_rating,active_flag
+D0001,Espace Autohaus 001,Espace Mittelland,Independent,4.35,True
+D0002,Lake Autohaus 002,Lake Geneva,Franchise,3.84,True
+D0003,Northwestern Autohaus 003,Northwestern Switzerland,Independent,4.37,True
+D0004,Eastern Autohaus 004,Eastern Switzerland,Independent,3.93,True
+D0005,Central Autohaus 005,Central Switzerland,Franchise,3.68,True
+D0006,Central Autohaus 006,Central Switzerland,Independent,4.98,True
+D0007,Lake Autohaus 007,Lake Geneva,Online Specialist,4.18,True
+D0008,Central Autohaus 008,Central Switzerland,Independent,3.85,False
+D0009,Eastern Autohaus 009,Eastern Switzerland,Franchise,4.05,True
+D0010,Lake Autohaus 010,Lake Geneva,Independent,4.32,True
+D0011,Lake Autohaus 011,Lake Geneva,Independent,4.41,True
+D0012,Lake Autohaus 012,Lake Geneva,Online Specialist,5.0,True
+D0013,Ticino Autohaus 013,Ticino,Independent,4.5,True
+D0014,Central Autohaus 014,Central Switzerland,Independent,4.48,True
+D0015,Lake Autohaus 015,Lake Geneva,Franchise,4.11,True
+D0016,Eastern Autohaus 016,Eastern Switzerland,Franchise,4.69,True
+D0017,Central Autohaus 017,Central Switzerland,Franchise,3.46,True
+D0018,Espace Autohaus 018,Espace Mittelland,Independent,3.2,True
+D0019,Central Autohaus 019,Central Switzerland,Independent,4.33,False
+D0020,Lake Autohaus 020,Lake Geneva,Independent,5.0,False
+D0021,Zurich Autohaus 021,Zurich,Franchise,4.43,True
+D0022,Espace Autohaus 022,Espace Mittelland,Franchise,4.65,False
+D0023,Eastern Autohaus 023,Eastern Switzerland,Independent,4.83,True
+D0024,Lake Autohaus 024,Lake Geneva,Franchise,4.0,False
+D0025,Northwestern Autohaus 025,Northwestern Switzerland,Independent,4.45,True
+D0026,Lake Autohaus 026,Lake Geneva,Franchise,4.97,True
+D0027,Espace Autohaus 027,Espace Mittelland,Franchise,3.91,True
+D0028,Espace Autohaus 028,Espace Mittelland,Independent,4.14,True
+D0029,Lake Autohaus 029,Lake Geneva,Independent,3.96,False
+D0030,Eastern Autohaus 030,Eastern Switzerland,Independent,3.9,True
+D0031,Central Autohaus 031,Central Switzerland,Franchise,4.95,True
+D0032,Central Autohaus 032,Central Switzerland,Franchise,4.06,False
+D0033,Espace Autohaus 033,Espace Mittelland,Online Specialist,4.44,True
+D0034,Espace Autohaus 034,Espace Mittelland,Franchise,4.08,True
+D0035,Northwestern Autohaus 035,Northwestern Switzerland,Independent,4.73,False
+D0036,Espace Autohaus 036,Espace Mittelland,Franchise,3.94,True
+D0037,Zurich Autohaus 037,Zurich,Franchise,4.42,True
+D0038,Lake Autohaus 038,Lake Geneva,Independent,3.5,True
+D0039,Central Autohaus 039,Central Switzerland,Independent,3.61,True
+D0040,Eastern Autohaus 040,Eastern Switzerland,Independent,4.05,True
+D0041,Ticino Autohaus 041,Ticino,Independent,4.34,True
+D0042,Ticino Autohaus 042,Ticino,Franchise,4.91,True
+D0043,Central Autohaus 043,Central Switzerland,Franchise,3.98,True
+D0044,Central Autohaus 044,Central Switzerland,Franchise,3.92,True
+D0045,Lake Autohaus 045,Lake Geneva,Franchise,3.94,True
+D0046,Northwestern Autohaus 046,Northwestern Switzerland,Independent,4.22,True
+D0047,Northwestern Autohaus 047,Northwestern Switzerland,Franchise,3.65,True
+D0048,Ticino Autohaus 048,Ticino,Independent,4.76,True
+D0049,Ticino Autohaus 049,Ticino,Online Specialist,4.02,True
+D0050,Ticino Autohaus 050,Ticino,Independent,4.6,True
+D0051,Central Autohaus 051,Central Switzerland,Franchise,3.86,True
+D0052,Central Autohaus 052,Central Switzerland,Franchise,3.98,True
+D0053,Lake Autohaus 053,Lake Geneva,Franchise,4.39,True
+D0054,Central Autohaus 054,Central Switzerland,Online Specialist,4.32,True
+D0055,Zurich Autohaus 055,Zurich,Independent,4.09,True
+D0056,Lake Autohaus 056,Lake Geneva,Franchise,3.39,True
+D0057,Central Autohaus 057,Central Switzerland,Franchise,4.59,True
+D0058,Central Autohaus 058,Central Switzerland,Independent,4.08,True
+D0059,Central Autohaus 059,Central Switzerland,Independent,4.77,True
+D0060,Zurich Autohaus 060,Zurich,Independent,4.42,True
+D0061,Eastern Autohaus 061,Eastern Switzerland,Franchise,3.97,True
+D0062,Central Autohaus 062,Central Switzerland,Independent,4.02,True
+D0063,Zurich Autohaus 063,Zurich,Franchise,3.7,True
+D0064,Northwestern Autohaus 064,Northwestern Switzerland,Franchise,3.76,True
+D0065,Central Autohaus 065,Central Switzerland,Independent,4.76,True
+D0066,Lake Autohaus 066,Lake Geneva,Franchise,4.29,False
+D0067,Eastern Autohaus 067,Eastern Switzerland,Franchise,4.08,True
+D0068,Northwestern Autohaus 068,Northwestern Switzerland,Independent,5.0,True
+D0069,Ticino Autohaus 069,Ticino,Franchise,4.44,True
+D0070,Espace Autohaus 070,Espace Mittelland,Independent,4.22,True
+D0071,Eastern Autohaus 071,Eastern Switzerland,Online Specialist,3.68,True
+D0072,Ticino Autohaus 072,Ticino,Franchise,4.5,True
+D0073,Lake Autohaus 073,Lake Geneva,Franchise,4.94,True
+D0074,Eastern Autohaus 074,Eastern Switzerland,Online Specialist,3.73,True
+D0075,Zurich Autohaus 075,Zurich,Franchise,4.07,True
+D0076,Lake Autohaus 076,Lake Geneva,Franchise,3.83,True
+D0077,Zurich Autohaus 077,Zurich,Independent,4.03,True
+D0078,Zurich Autohaus 078,Zurich,Independent,3.8,True
+D0079,Lake Autohaus 079,Lake Geneva,Independent,3.29,True
+D0080,Eastern Autohaus 080,Eastern Switzerland,Franchise,4.02,True
+D0081,Central Autohaus 081,Central Switzerland,Franchise,4.17,True
+D0082,Lake Autohaus 082,Lake Geneva,Franchise,4.02,True
+D0083,Zurich Autohaus 083,Zurich,Franchise,4.39,True
+D0084,Espace Autohaus 084,Espace Mittelland,Franchise,4.56,True
+D0085,Ticino Autohaus 085,Ticino,Independent,4.01,True
+D0086,Zurich Autohaus 086,Zurich,Independent,4.69,True
+D0087,Zurich Autohaus 087,Zurich,Franchise,5.0,False
+D0088,Espace Autohaus 088,Espace Mittelland,Franchise,4.39,True
+D0089,Central Autohaus 089,Central Switzerland,Franchise,3.44,True
+D0090,Eastern Autohaus 090,Eastern Switzerland,Franchise,4.39,True
+D0091,Northwestern Autohaus 091,Northwestern Switzerland,Franchise,4.16,True
+D0092,Central Autohaus 092,Central Switzerland,Franchise,3.65,True
+D0093,Central Autohaus 093,Central Switzerland,Independent,4.41,True
+D0094,Ticino Autohaus 094,Ticino,Online Specialist,4.22,True
+D0095,Central Autohaus 095,Central Switzerland,Franchise,3.74,True
+D0096,Central Autohaus 096,Central Switzerland,Independent,4.0,True
+D0097,Espace Autohaus 097,Espace Mittelland,Independent,3.93,True
+D0098,Central Autohaus 098,Central Switzerland,Franchise,4.32,True
+D0099,Zurich Autohaus 099,Zurich,Franchise,4.88,True
+D0100,Zurich Autohaus 100,Zurich,Independent,3.99,False
+D0101,Central Autohaus 101,Central Switzerland,Franchise,4.66,False
+D0102,Central Autohaus 102,Central Switzerland,Franchise,4.0,True
+D0103,Northwestern Autohaus 103,Northwestern Switzerland,Independent,3.94,True
+D0104,Espace Autohaus 104,Espace Mittelland,Independent,3.53,True
+D0105,Ticino Autohaus 105,Ticino,Franchise,4.21,True
+D0106,Zurich Autohaus 106,Zurich,Franchise,3.33,True
+D0107,Eastern Autohaus 107,Eastern Switzerland,Independent,4.6,True
+D0108,Lake Autohaus 108,Lake Geneva,Franchise,5.0,True
+D0109,Central Autohaus 109,Central Switzerland,Independent,4.84,True
+D0110,Zurich Autohaus 110,Zurich,Franchise,4.48,True
+D0111,Ticino Autohaus 111,Ticino,Franchise,4.8,True
+D0112,Lake Autohaus 112,Lake Geneva,Franchise,3.94,True
+D0113,Lake Autohaus 113,Lake Geneva,Franchise,4.35,True
+D0114,Central Autohaus 114,Central Switzerland,Franchise,4.29,True
+D0115,Zurich Autohaus 115,Zurich,Franchise,3.59,True
+D0116,Eastern Autohaus 116,Eastern Switzerland,Independent,4.46,True
+D0117,Espace Autohaus 117,Espace Mittelland,Franchise,4.01,True
+D0118,Central Autohaus 118,Central Switzerland,Independent,3.48,True
+D0119,Lake Autohaus 119,Lake Geneva,Online Specialist,4.88,True
+D0120,Central Autohaus 120,Central Switzerland,Independent,4.63,True
+D0121,Northwestern Autohaus 121,Northwestern Switzerland,Independent,4.46,True
+D0122,Lake Autohaus 122,Lake Geneva,Franchise,4.21,True
+D0123,Central Autohaus 123,Central Switzerland,Franchise,4.11,True
+D0124,Northwestern Autohaus 124,Northwestern Switzerland,Franchise,3.61,True
+D0125,Ticino Autohaus 125,Ticino,Franchise,4.11,True
+D0126,Eastern Autohaus 126,Eastern Switzerland,Online Specialist,4.64,True
+D0127,Central Autohaus 127,Central Switzerland,Independent,4.06,True
+D0128,Lake Autohaus 128,Lake Geneva,Online Specialist,4.11,True
+D0129,Eastern Autohaus 129,Eastern Switzerland,Independent,4.65,True
+D0130,Central Autohaus 130,Central Switzerland,Franchise,4.21,True
+D0131,Northwestern Autohaus 131,Northwestern Switzerland,Franchise,4.61,False
+D0132,Zurich Autohaus 132,Zurich,Independent,3.71,True
+D0133,Ticino Autohaus 133,Ticino,Franchise,4.96,True
+D0134,Eastern Autohaus 134,Eastern Switzerland,Online Specialist,4.07,True
+D0135,Northwestern Autohaus 135,Northwestern Switzerland,Franchise,4.35,True
+D0136,Eastern Autohaus 136,Eastern Switzerland,Franchise,3.79,True
+D0137,Central Autohaus 137,Central Switzerland,Independent,3.99,True
+D0138,Ticino Autohaus 138,Ticino,Franchise,3.67,True
+D0139,Central Autohaus 139,Central Switzerland,Franchise,4.04,True
+D0140,Zurich Autohaus 140,Zurich,Franchise,3.81,True
+D0141,Eastern Autohaus 141,Eastern Switzerland,Franchise,4.17,True
+D0142,Eastern Autohaus 142,Eastern Switzerland,Independent,3.61,True
+D0143,Ticino Autohaus 143,Ticino,Franchise,4.07,True
+D0144,Ticino Autohaus 144,Ticino,Franchise,3.88,True
+D0145,Lake Autohaus 145,Lake Geneva,Franchise,4.31,True
+D0146,Lake Autohaus 146,Lake Geneva,Independent,4.55,True
+D0147,Lake Autohaus 147,Lake Geneva,Online Specialist,4.57,True
+D0148,Eastern Autohaus 148,Eastern Switzerland,Independent,4.53,False
+D0149,Ticino Autohaus 149,Ticino,Franchise,3.24,True
+D0150,Lake Autohaus 150,Lake Geneva,Independent,4.06,True

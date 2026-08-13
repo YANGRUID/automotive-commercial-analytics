@@ -1,0 +1,7 @@
+table_name,raw_records,duplicate_records,corrected_records,quarantined_records,clean_records,loaded_records,load_status
+dim_customer,50050,50,366,50,50000,50000,Loaded
+dim_vehicle,100000,0,409,77,99923,99923,Loaded
+dim_dealer,152,2,5,2,150,150,Loaded
+fact_inquiry,100150,150,152,337,99813,99813,Loaded
+fact_quote,345389,517,687,2265,343120,343120,Loaded
+dim_date,1461,0,0,0,1461,1461,Loaded

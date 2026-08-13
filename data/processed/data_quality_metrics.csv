@@ -1,0 +1,11 @@
+metric_name,stage,passed_records,total_records,rate,description,assessment_date
+completeness_rate,Processed,4701163,4701163,1.0,Required fields populated at the applicable table grain,2026-01-01
+overall_data_quality_score,Processed,7710401,7710401,1.0,Passed checks divided by applicable checks across all four dimensions,2026-01-01
+referential_integrity_rate,Processed,985679,985679,1.0,Fact foreign keys resolve to curated parent records,2026-01-01
+uniqueness_rate,Processed,594467,594467,1.0,Primary-key rows are unique at the declared table grain,2026-01-01
+validity_rate,Processed,1429092,1429092,1.0,"Values conform to documented types, dates, and business ranges",2026-01-01
+completeness_rate,Raw,4721506,4722729,0.9997410395557315,Required fields populated at the applicable table grain,2026-01-01
+overall_data_quality_score,Raw,7743556,7747628,0.9994744197837067,Passed checks divided by applicable checks across all four dimensions,2026-01-01
+referential_integrity_rate,Raw,990834,991228,0.9996025132461956,Fact foreign keys resolve to curated parent records,2026-01-01
+uniqueness_rate,Raw,596483,597202,0.9987960522570253,Primary-key rows are unique at the declared table grain,2026-01-01
+validity_rate,Raw,1434733,1436469,0.998791481055282,"Values conform to documented types, dates, and business ranges",2026-01-01
