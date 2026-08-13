@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Automotive Commercial Analytics",
+    "description": "Five-page commercial and data-quality Power BI report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f0977cc4-af5a-402e-aa87-71d3493cad70"
+  }
+}
