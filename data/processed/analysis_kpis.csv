@@ -1,0 +1,17 @@
+metric_name,value
+total_inquiries,99813.0
+total_quotes,343120.0
+converted_inquiries,32464.0
+conversion_rate,0.3252482141604801
+average_sale_value,21410.97753419172
+total_accepted_value,695085974.67
+average_quote_spread,1769.285178583952
+average_quote_spread_pct,0.10435600272509594
+average_quote_response_hours,12.079694305199348
+average_fastest_response_hours,5.866584613226733
+average_quotes_per_inquiry,3.4376283650426296
+active_dealers,136.0
+quote_anomalies,1162.0
+quote_anomaly_rate,0.0033865702961063185
+raw_data_quality_score,0.9994744197837068
+processed_data_quality_score,1.0

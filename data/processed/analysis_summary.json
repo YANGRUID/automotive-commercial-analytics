@@ -1,0 +1,2894 @@
+{
+  "annual": [
+    {
+      "accepted_value": 149238473.42,
+      "conversion_rate": 0.3251304996,
+      "inquiries": 21456,
+      "year": 2022
+    },
+    {
+      "accepted_value": 167212017.88,
+      "conversion_rate": 0.3245166997,
+      "inquiries": 23743,
+      "year": 2023
+    },
+    {
+      "accepted_value": 183688542.01,
+      "conversion_rate": 0.328525763,
+      "inquiries": 26278,
+      "year": 2024
+    },
+    {
+      "accepted_value": 194946941.36,
+      "conversion_rate": 0.3229107849,
+      "inquiries": 28336,
+      "year": 2025
+    }
+  ],
+  "dealer_detail": [
+    {
+      "accepted_value": 16920934.49,
+      "average_quote_to_market_ratio": 0.9828251307,
+      "average_response_hours": 6.1713196864,
+      "dealer_id": "D0111",
+      "dealer_name": "Ticino Autohaus 111",
+      "dealer_region": "Ticino",
+      "quotes": 2296,
+      "win_rate": 0.3175087108,
+      "wins": 729
+    },
+    {
+      "accepted_value": 16096932.09,
+      "average_quote_to_market_ratio": 1.0000485262,
+      "average_response_hours": 13.8212318522,
+      "dealer_id": "D0062",
+      "dealer_name": "Central Autohaus 062",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2273,
+      "win_rate": 0.2938847338,
+      "wins": 668
+    },
+    {
+      "accepted_value": 13407529.87,
+      "average_quote_to_market_ratio": 0.9766660295,
+      "average_response_hours": 6.7536142485,
+      "dealer_id": "D0040",
+      "dealer_name": "Eastern Autohaus 040",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2302,
+      "win_rate": 0.2610773241,
+      "wins": 601
+    },
+    {
+      "accepted_value": 13746088.73,
+      "average_quote_to_market_ratio": 0.9823735833,
+      "average_response_hours": 7.6437837838,
+      "dealer_id": "D0090",
+      "dealer_name": "Eastern Autohaus 090",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2294,
+      "win_rate": 0.2428073235,
+      "wins": 557
+    },
+    {
+      "accepted_value": 12733535.61,
+      "average_quote_to_market_ratio": 0.9829455191,
+      "average_response_hours": 9.1401020408,
+      "dealer_id": "D0085",
+      "dealer_name": "Ticino Autohaus 085",
+      "dealer_region": "Ticino",
+      "quotes": 2254,
+      "win_rate": 0.2400177462,
+      "wins": 541
+    },
+    {
+      "accepted_value": 11959639.47,
+      "average_quote_to_market_ratio": 0.9659798165,
+      "average_response_hours": 14.7515377894,
+      "dealer_id": "D0126",
+      "dealer_name": "Eastern Autohaus 126",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2289,
+      "win_rate": 0.2341633901,
+      "wins": 536
+    },
+    {
+      "accepted_value": 10871572.98,
+      "average_quote_to_market_ratio": 0.9720236536,
+      "average_response_hours": 17.1606376562,
+      "dealer_id": "D0134",
+      "dealer_name": "Eastern Autohaus 134",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2321,
+      "win_rate": 0.2089616545,
+      "wins": 485
+    },
+    {
+      "accepted_value": 11445092.82,
+      "average_quote_to_market_ratio": 0.9727805218,
+      "average_response_hours": 11.0059919028,
+      "dealer_id": "D0076",
+      "dealer_name": "Lake Autohaus 076",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2223,
+      "win_rate": 0.208277103,
+      "wins": 463
+    },
+    {
+      "accepted_value": 10522881.54,
+      "average_quote_to_market_ratio": 0.9543910268,
+      "average_response_hours": 9.0763883929,
+      "dealer_id": "D0146",
+      "dealer_name": "Lake Autohaus 146",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2240,
+      "win_rate": 0.2004464286,
+      "wins": 449
+    },
+    {
+      "accepted_value": 9978233.76,
+      "average_quote_to_market_ratio": 0.9448351768,
+      "average_response_hours": 11.9720852221,
+      "dealer_id": "D0108",
+      "dealer_name": "Lake Autohaus 108",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2206,
+      "win_rate": 0.19356301,
+      "wins": 427
+    },
+    {
+      "accepted_value": 9958873.75,
+      "average_quote_to_market_ratio": 0.9431328976,
+      "average_response_hours": 10.9135686275,
+      "dealer_id": "D0035",
+      "dealer_name": "Northwestern Autohaus 035",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2295,
+      "win_rate": 0.1934640523,
+      "wins": 444
+    },
+    {
+      "accepted_value": 9806692.41,
+      "average_quote_to_market_ratio": 0.9551722471,
+      "average_response_hours": 13.8255461056,
+      "dealer_id": "D0094",
+      "dealer_name": "Ticino Autohaus 094",
+      "dealer_region": "Ticino",
+      "quotes": 2234,
+      "win_rate": 0.1920322292,
+      "wins": 429
+    },
+    {
+      "accepted_value": 9934946.64,
+      "average_quote_to_market_ratio": 0.9493454505,
+      "average_response_hours": 13.2241237113,
+      "dealer_id": "D0020",
+      "dealer_name": "Lake Autohaus 020",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2231,
+      "win_rate": 0.1887046168,
+      "wins": 421
+    },
+    {
+      "accepted_value": 10139617.06,
+      "average_quote_to_market_ratio": 0.9421562861,
+      "average_response_hours": 13.548289649,
+      "dealer_id": "D0050",
+      "dealer_name": "Ticino Autohaus 050",
+      "dealer_region": "Ticino",
+      "quotes": 2251,
+      "win_rate": 0.1843625056,
+      "wins": 415
+    },
+    {
+      "accepted_value": 9326440.02,
+      "average_quote_to_market_ratio": 0.9588800179,
+      "average_response_hours": 16.721721055,
+      "dealer_id": "D0041",
+      "dealer_name": "Ticino Autohaus 041",
+      "dealer_region": "Ticino",
+      "quotes": 2237,
+      "win_rate": 0.1814930711,
+      "wins": 406
+    },
+    {
+      "accepted_value": 9688130.96,
+      "average_quote_to_market_ratio": 0.9394697113,
+      "average_response_hours": 12.560689358,
+      "dealer_id": "D0101",
+      "dealer_name": "Central Autohaus 101",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2321,
+      "win_rate": 0.181387333,
+      "wins": 421
+    },
+    {
+      "accepted_value": 9709828.0,
+      "average_quote_to_market_ratio": 0.9531946218,
+      "average_response_hours": 11.15919108,
+      "dealer_id": "D0122",
+      "dealer_name": "Lake Autohaus 122",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2287,
+      "win_rate": 0.1810231745,
+      "wins": 414
+    },
+    {
+      "accepted_value": 9514112.35,
+      "average_quote_to_market_ratio": 0.9515675652,
+      "average_response_hours": 9.1496869565,
+      "dealer_id": "D0012",
+      "dealer_name": "Lake Autohaus 012",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2300,
+      "win_rate": 0.1808695652,
+      "wins": 416
+    },
+    {
+      "accepted_value": 8850481.13,
+      "average_quote_to_market_ratio": 0.9537405867,
+      "average_response_hours": 13.2355297723,
+      "dealer_id": "D0120",
+      "dealer_name": "Central Autohaus 120",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2284,
+      "win_rate": 0.1729422067,
+      "wins": 395
+    },
+    {
+      "accepted_value": 8140857.83,
+      "average_quote_to_market_ratio": 0.955178216,
+      "average_response_hours": 13.8057507844,
+      "dealer_id": "D0084",
+      "dealer_name": "Espace Autohaus 084",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2231,
+      "win_rate": 0.1703272075,
+      "wins": 380
+    },
+    {
+      "accepted_value": 8371713.79,
+      "average_quote_to_market_ratio": 0.9324266953,
+      "average_response_hours": 8.1035622318,
+      "dealer_id": "D0033",
+      "dealer_name": "Espace Autohaus 033",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2330,
+      "win_rate": 0.1686695279,
+      "wins": 393
+    },
+    {
+      "accepted_value": 8937796.81,
+      "average_quote_to_market_ratio": 0.9689968545,
+      "average_response_hours": 9.0202664919,
+      "dealer_id": "D0147",
+      "dealer_name": "Lake Autohaus 147",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2289,
+      "win_rate": 0.1686325907,
+      "wins": 386
+    },
+    {
+      "accepted_value": 9041429.62,
+      "average_quote_to_market_ratio": 0.9677884516,
+      "average_response_hours": 16.4035596886,
+      "dealer_id": "D0086",
+      "dealer_name": "Zurich Autohaus 086",
+      "dealer_region": "Zurich",
+      "quotes": 2312,
+      "win_rate": 0.1673875433,
+      "wins": 387
+    },
+    {
+      "accepted_value": 8373040.57,
+      "average_quote_to_market_ratio": 0.9378279522,
+      "average_response_hours": 7.9065457762,
+      "dealer_id": "D0119",
+      "dealer_name": "Lake Autohaus 119",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2261,
+      "win_rate": 0.1671826625,
+      "wins": 378
+    },
+    {
+      "accepted_value": 8564260.79,
+      "average_quote_to_market_ratio": 0.9496840488,
+      "average_response_hours": 9.1677777778,
+      "dealer_id": "D0130",
+      "dealer_name": "Central Autohaus 130",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2376,
+      "win_rate": 0.1670875421,
+      "wins": 397
+    },
+    {
+      "accepted_value": 9106040.98,
+      "average_quote_to_market_ratio": 0.9414872849,
+      "average_response_hours": 10.6806336551,
+      "dealer_id": "D0073",
+      "dealer_name": "Lake Autohaus 073",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2383,
+      "win_rate": 0.163659253,
+      "wins": 390
+    },
+    {
+      "accepted_value": 8319588.74,
+      "average_quote_to_market_ratio": 0.9546531044,
+      "average_response_hours": 9.2097005724,
+      "dealer_id": "D0141",
+      "dealer_name": "Eastern Autohaus 141",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2271,
+      "win_rate": 0.1624834875,
+      "wins": 369
+    },
+    {
+      "accepted_value": 8472511.85,
+      "average_quote_to_market_ratio": 0.9461335286,
+      "average_response_hours": 8.4731771068,
+      "dealer_id": "D0056",
+      "dealer_name": "Lake Autohaus 056",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2219,
+      "win_rate": 0.1613339342,
+      "wins": 358
+    },
+    {
+      "accepted_value": 7489049.76,
+      "average_quote_to_market_ratio": 0.9501922635,
+      "average_response_hours": 12.7909460654,
+      "dealer_id": "D0128",
+      "dealer_name": "Lake Autohaus 128",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2262,
+      "win_rate": 0.157382847,
+      "wins": 356
+    },
+    {
+      "accepted_value": 7917451.74,
+      "average_quote_to_market_ratio": 0.9538610647,
+      "average_response_hours": 13.6174219094,
+      "dealer_id": "D0001",
+      "dealer_name": "Espace Autohaus 001",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2273,
+      "win_rate": 0.1570611527,
+      "wins": 357
+    },
+    {
+      "accepted_value": 7676505.19,
+      "average_quote_to_market_ratio": 0.9452338886,
+      "average_response_hours": 10.1838097326,
+      "dealer_id": "D0024",
+      "dealer_name": "Lake Autohaus 024",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2281,
+      "win_rate": 0.1551950899,
+      "wins": 354
+    },
+    {
+      "accepted_value": 7647970.75,
+      "average_quote_to_market_ratio": 0.9496486136,
+      "average_response_hours": 22.3697898032,
+      "dealer_id": "D0087",
+      "dealer_name": "Zurich Autohaus 087",
+      "dealer_region": "Zurich",
+      "quotes": 2236,
+      "win_rate": 0.1480322004,
+      "wins": 331
+    },
+    {
+      "accepted_value": 7354478.65,
+      "average_quote_to_market_ratio": 0.9285258065,
+      "average_response_hours": 10.0911247878,
+      "dealer_id": "D0008",
+      "dealer_name": "Central Autohaus 008",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2356,
+      "win_rate": 0.1468590832,
+      "wins": 346
+    },
+    {
+      "accepted_value": 6943146.18,
+      "average_quote_to_market_ratio": 0.9327489483,
+      "average_response_hours": 9.932537248,
+      "dealer_id": "D0048",
+      "dealer_name": "Ticino Autohaus 048",
+      "dealer_region": "Ticino",
+      "quotes": 2282,
+      "win_rate": 0.1463628396,
+      "wins": 334
+    },
+    {
+      "accepted_value": 7123241.92,
+      "average_quote_to_market_ratio": 0.9388192619,
+      "average_response_hours": 11.6979522952,
+      "dealer_id": "D0140",
+      "dealer_name": "Zurich Autohaus 140",
+      "dealer_region": "Zurich",
+      "quotes": 2222,
+      "win_rate": 0.1462646265,
+      "wins": 325
+    },
+    {
+      "accepted_value": 7497550.63,
+      "average_quote_to_market_ratio": 0.9459942982,
+      "average_response_hours": 10.4110350877,
+      "dealer_id": "D0003",
+      "dealer_name": "Northwestern Autohaus 003",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2280,
+      "win_rate": 0.1447368421,
+      "wins": 330
+    },
+    {
+      "accepted_value": 7304499.89,
+      "average_quote_to_market_ratio": 0.9457610013,
+      "average_response_hours": 14.7839306105,
+      "dealer_id": "D0136",
+      "dealer_name": "Eastern Autohaus 136",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2277,
+      "win_rate": 0.1427316645,
+      "wins": 325
+    },
+    {
+      "accepted_value": 6807519.97,
+      "average_quote_to_market_ratio": 0.9334765366,
+      "average_response_hours": 9.5265903993,
+      "dealer_id": "D0105",
+      "dealer_name": "Ticino Autohaus 105",
+      "dealer_region": "Ticino",
+      "quotes": 2229,
+      "win_rate": 0.1417676088,
+      "wins": 316
+    },
+    {
+      "accepted_value": 7002923.57,
+      "average_quote_to_market_ratio": 0.9417929053,
+      "average_response_hours": 9.9485675797,
+      "dealer_id": "D0098",
+      "dealer_name": "Central Autohaus 098",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2227,
+      "win_rate": 0.1392007185,
+      "wins": 310
+    },
+    {
+      "accepted_value": 7257277.78,
+      "average_quote_to_market_ratio": 0.9428622625,
+      "average_response_hours": 13.759491825,
+      "dealer_id": "D0006",
+      "dealer_name": "Central Autohaus 006",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2263,
+      "win_rate": 0.137870084,
+      "wins": 312
+    },
+    {
+      "accepted_value": 6854551.4,
+      "average_quote_to_market_ratio": 0.9352019154,
+      "average_response_hours": 17.4209309577,
+      "dealer_id": "D0133",
+      "dealer_name": "Ticino Autohaus 133",
+      "dealer_region": "Ticino",
+      "quotes": 2245,
+      "win_rate": 0.1371937639,
+      "wins": 308
+    },
+    {
+      "accepted_value": 7592922.8,
+      "average_quote_to_market_ratio": 0.9412361842,
+      "average_response_hours": 8.7766666667,
+      "dealer_id": "D0110",
+      "dealer_name": "Zurich Autohaus 110",
+      "dealer_region": "Zurich",
+      "quotes": 2280,
+      "win_rate": 0.1368421053,
+      "wins": 312
+    },
+    {
+      "accepted_value": 7071353.97,
+      "average_quote_to_market_ratio": 0.9373903376,
+      "average_response_hours": 8.8666160338,
+      "dealer_id": "D0099",
+      "dealer_name": "Zurich Autohaus 099",
+      "dealer_region": "Zurich",
+      "quotes": 2370,
+      "win_rate": 0.1362869198,
+      "wins": 323
+    },
+    {
+      "accepted_value": 6583847.98,
+      "average_quote_to_market_ratio": 0.9100212148,
+      "average_response_hours": 11.1061171367,
+      "dealer_id": "D0044",
+      "dealer_name": "Central Autohaus 044",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2305,
+      "win_rate": 0.1362255965,
+      "wins": 314
+    },
+    {
+      "accepted_value": 6949037.13,
+      "average_quote_to_market_ratio": 0.9566481746,
+      "average_response_hours": 10.5799202686,
+      "dealer_id": "D0117",
+      "dealer_name": "Espace Autohaus 117",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2383,
+      "win_rate": 0.1359630718,
+      "wins": 324
+    },
+    {
+      "accepted_value": 6706882.2299999995,
+      "average_quote_to_market_ratio": 0.9187702727,
+      "average_response_hours": 11.9301698704,
+      "dealer_id": "D0026",
+      "dealer_name": "Lake Autohaus 026",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2237,
+      "win_rate": 0.1309789897,
+      "wins": 293
+    },
+    {
+      "accepted_value": 6625695.07,
+      "average_quote_to_market_ratio": 0.9478356752,
+      "average_response_hours": 13.0262263357,
+      "dealer_id": "D0131",
+      "dealer_name": "Northwestern Autohaus 131",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2377,
+      "win_rate": 0.1283129996,
+      "wins": 305
+    },
+    {
+      "accepted_value": 6283380.8,
+      "average_quote_to_market_ratio": 0.91902311,
+      "average_response_hours": 6.2827104811,
+      "dealer_id": "D0092",
+      "dealer_name": "Central Autohaus 092",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2328,
+      "win_rate": 0.1258591065,
+      "wins": 293
+    },
+    {
+      "accepted_value": 6479094.81,
+      "average_quote_to_market_ratio": 0.9301872152,
+      "average_response_hours": 13.1582278481,
+      "dealer_id": "D0065",
+      "dealer_name": "Central Autohaus 065",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2370,
+      "win_rate": 0.1248945148,
+      "wins": 296
+    },
+    {
+      "accepted_value": 6204000.69,
+      "average_quote_to_market_ratio": 0.9305442398,
+      "average_response_hours": 13.5839143469,
+      "dealer_id": "D0070",
+      "dealer_name": "Espace Autohaus 070",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2335,
+      "win_rate": 0.1220556745,
+      "wins": 285
+    },
+    {
+      "accepted_value": 5610398.16,
+      "average_quote_to_market_ratio": 0.9471227253,
+      "average_response_hours": 12.1261427949,
+      "dealer_id": "D0103",
+      "dealer_name": "Northwestern Autohaus 103",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2297,
+      "win_rate": 0.1205920766,
+      "wins": 277
+    },
+    {
+      "accepted_value": 6096758.27,
+      "average_quote_to_market_ratio": 0.9467540576,
+      "average_response_hours": 18.0091308204,
+      "dealer_id": "D0036",
+      "dealer_name": "Espace Autohaus 036",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2255,
+      "win_rate": 0.1157427938,
+      "wins": 261
+    },
+    {
+      "accepted_value": 5464307.79,
+      "average_quote_to_market_ratio": 0.9241288568,
+      "average_response_hours": 13.95280068,
+      "dealer_id": "D0018",
+      "dealer_name": "Espace Autohaus 018",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2353,
+      "win_rate": 0.1126221844,
+      "wins": 265
+    },
+    {
+      "accepted_value": 5660638.81,
+      "average_quote_to_market_ratio": 0.9211946141,
+      "average_response_hours": 7.4780619169,
+      "dealer_id": "D0135",
+      "dealer_name": "Northwestern Autohaus 135",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2358,
+      "win_rate": 0.1111111111,
+      "wins": 262
+    },
+    {
+      "accepted_value": 4991881.12,
+      "average_quote_to_market_ratio": 0.9140709375,
+      "average_response_hours": 11.1137767857,
+      "dealer_id": "D0113",
+      "dealer_name": "Lake Autohaus 113",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2240,
+      "win_rate": 0.109375,
+      "wins": 245
+    },
+    {
+      "accepted_value": 5400765.82,
+      "average_quote_to_market_ratio": 0.9398663913,
+      "average_response_hours": 21.9126,
+      "dealer_id": "D0047",
+      "dealer_name": "Northwestern Autohaus 047",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2300,
+      "win_rate": 0.1069565217,
+      "wins": 246
+    },
+    {
+      "accepted_value": 5041139.65,
+      "average_quote_to_market_ratio": 0.9244398136,
+      "average_response_hours": 12.367734011,
+      "dealer_id": "D0096",
+      "dealer_name": "Central Autohaus 096",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2361,
+      "win_rate": 0.1058873359,
+      "wins": 250
+    },
+    {
+      "accepted_value": 4985482.37,
+      "average_quote_to_market_ratio": 0.9529761273,
+      "average_response_hours": 19.5150751547,
+      "dealer_id": "D0107",
+      "dealer_name": "Eastern Autohaus 107",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2262,
+      "win_rate": 0.1038903625,
+      "wins": 235
+    },
+    {
+      "accepted_value": 4970813.66,
+      "average_quote_to_market_ratio": 0.9275094709,
+      "average_response_hours": 10.7035927079,
+      "dealer_id": "D0118",
+      "dealer_name": "Central Autohaus 118",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2249,
+      "win_rate": 0.1036016007,
+      "wins": 233
+    },
+    {
+      "accepted_value": 5183348.61,
+      "average_quote_to_market_ratio": 0.9269886393,
+      "average_response_hours": 15.9755939525,
+      "dealer_id": "D0109",
+      "dealer_name": "Central Autohaus 109",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2315,
+      "win_rate": 0.1032397408,
+      "wins": 239
+    },
+    {
+      "accepted_value": 4844313.09,
+      "average_quote_to_market_ratio": 0.9324578358,
+      "average_response_hours": 13.0663101161,
+      "dealer_id": "D0029",
+      "dealer_name": "Lake Autohaus 029",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2412,
+      "win_rate": 0.1019900498,
+      "wins": 246
+    },
+    {
+      "accepted_value": 4863460.14,
+      "average_quote_to_market_ratio": 0.9326093333,
+      "average_response_hours": 10.9511466667,
+      "dealer_id": "D0007",
+      "dealer_name": "Lake Autohaus 007",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2250,
+      "win_rate": 0.1008888889,
+      "wins": 227
+    },
+    {
+      "accepted_value": 4960754.4,
+      "average_quote_to_market_ratio": 0.9407183956,
+      "average_response_hours": 11.3397144057,
+      "dealer_id": "D0100",
+      "dealer_name": "Zurich Autohaus 100",
+      "dealer_region": "Zurich",
+      "quotes": 2381,
+      "win_rate": 0.0991180176,
+      "wins": 236
+    },
+    {
+      "accepted_value": 4891853.99,
+      "average_quote_to_market_ratio": 0.9043779504,
+      "average_response_hours": 10.0747417052,
+      "dealer_id": "D0137",
+      "dealer_name": "Central Autohaus 137",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2381,
+      "win_rate": 0.0970180596,
+      "wins": 231
+    },
+    {
+      "accepted_value": 4491275.73,
+      "average_quote_to_market_ratio": 0.9250485403,
+      "average_response_hours": 14.5205185185,
+      "dealer_id": "D0123",
+      "dealer_name": "Central Autohaus 123",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2295,
+      "win_rate": 0.0967320261,
+      "wins": 222
+    },
+    {
+      "accepted_value": 4671625.03,
+      "average_quote_to_market_ratio": 0.9355366948,
+      "average_response_hours": 14.1594891159,
+      "dealer_id": "D0005",
+      "dealer_name": "Central Autohaus 005",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2251,
+      "win_rate": 0.0924033763,
+      "wins": 208
+    },
+    {
+      "accepted_value": 4361719.63,
+      "average_quote_to_market_ratio": 0.9201961274,
+      "average_response_hours": 14.9375473322,
+      "dealer_id": "D0061",
+      "dealer_name": "Eastern Autohaus 061",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2324,
+      "win_rate": 0.0916523236,
+      "wins": 213
+    },
+    {
+      "accepted_value": 4381552.73,
+      "average_quote_to_market_ratio": 0.906408882,
+      "average_response_hours": 10.3406849315,
+      "dealer_id": "D0083",
+      "dealer_name": "Zurich Autohaus 083",
+      "dealer_region": "Zurich",
+      "quotes": 2263,
+      "win_rate": 0.0905877154,
+      "wins": 205
+    },
+    {
+      "accepted_value": 3976524.53,
+      "average_quote_to_market_ratio": 0.9126851517,
+      "average_response_hours": 9.6163558171,
+      "dealer_id": "D0052",
+      "dealer_name": "Central Autohaus 052",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2209,
+      "win_rate": 0.0882752377,
+      "wins": 195
+    },
+    {
+      "accepted_value": 3847820.47,
+      "average_quote_to_market_ratio": 0.9271604366,
+      "average_response_hours": 10.6206412005,
+      "dealer_id": "D0027",
+      "dealer_name": "Espace Autohaus 027",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2199,
+      "win_rate": 0.0877671669,
+      "wins": 193
+    },
+    {
+      "accepted_value": 4115053.56,
+      "average_quote_to_market_ratio": 0.9133809091,
+      "average_response_hours": 9.1571818182,
+      "dealer_id": "D0021",
+      "dealer_name": "Zurich Autohaus 021",
+      "dealer_region": "Zurich",
+      "quotes": 2200,
+      "win_rate": 0.0868181818,
+      "wins": 191
+    },
+    {
+      "accepted_value": 3782373.73,
+      "average_quote_to_market_ratio": 0.937765588,
+      "average_response_hours": 16.1214813127,
+      "dealer_id": "D0067",
+      "dealer_name": "Eastern Autohaus 067",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2194,
+      "win_rate": 0.0852324521,
+      "wins": 187
+    },
+    {
+      "accepted_value": 3762008.85,
+      "average_quote_to_market_ratio": 0.9189572185,
+      "average_response_hours": 5.841214128,
+      "dealer_id": "D0022",
+      "dealer_name": "Espace Autohaus 022",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2265,
+      "win_rate": 0.085209713,
+      "wins": 193
+    },
+    {
+      "accepted_value": 3869967.56,
+      "average_quote_to_market_ratio": 0.9570496114,
+      "average_response_hours": 14.7137348877,
+      "dealer_id": "D0059",
+      "dealer_name": "Central Autohaus 059",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2316,
+      "win_rate": 0.0846286701,
+      "wins": 196
+    },
+    {
+      "accepted_value": 3810476.91,
+      "average_quote_to_market_ratio": 0.9286970549,
+      "average_response_hours": 11.123178022,
+      "dealer_id": "D0045",
+      "dealer_name": "Lake Autohaus 045",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2275,
+      "win_rate": 0.0826373626,
+      "wins": 188
+    },
+    {
+      "accepted_value": 3813162.74,
+      "average_quote_to_market_ratio": 0.9443003429,
+      "average_response_hours": 16.1954350622,
+      "dealer_id": "D0121",
+      "dealer_name": "Northwestern Autohaus 121",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2333,
+      "win_rate": 0.0810115731,
+      "wins": 189
+    },
+    {
+      "accepted_value": 3680255.03,
+      "average_quote_to_market_ratio": 0.9284363831,
+      "average_response_hours": 15.8524540402,
+      "dealer_id": "D0037",
+      "dealer_name": "Zurich Autohaus 037",
+      "dealer_region": "Zurich",
+      "quotes": 2339,
+      "win_rate": 0.0786660966,
+      "wins": 184
+    },
+    {
+      "accepted_value": 3873805.98,
+      "average_quote_to_market_ratio": 0.9221724669,
+      "average_response_hours": 10.0350748183,
+      "dealer_id": "D0069",
+      "dealer_name": "Ticino Autohaus 069",
+      "dealer_region": "Ticino",
+      "quotes": 2339,
+      "win_rate": 0.0786660966,
+      "wins": 184
+    },
+    {
+      "accepted_value": 3386827.1,
+      "average_quote_to_market_ratio": 0.9240205607,
+      "average_response_hours": 18.372931181,
+      "dealer_id": "D0060",
+      "dealer_name": "Zurich Autohaus 060",
+      "dealer_region": "Zurich",
+      "quotes": 2354,
+      "win_rate": 0.0773152082,
+      "wins": 182
+    },
+    {
+      "accepted_value": 3650903.11,
+      "average_quote_to_market_ratio": 0.9138774497,
+      "average_response_hours": 14.9529753915,
+      "dealer_id": "D0082",
+      "dealer_name": "Lake Autohaus 082",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2235,
+      "win_rate": 0.0769574944,
+      "wins": 172
+    },
+    {
+      "accepted_value": 3091712.07,
+      "average_quote_to_market_ratio": 0.89328434,
+      "average_response_hours": 8.8678434004,
+      "dealer_id": "D0145",
+      "dealer_name": "Lake Autohaus 145",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2235,
+      "win_rate": 0.0729306488,
+      "wins": 163
+    },
+    {
+      "accepted_value": 3396739.6,
+      "average_quote_to_market_ratio": 0.9213016219,
+      "average_response_hours": 9.2562825437,
+      "dealer_id": "D0104",
+      "dealer_name": "Espace Autohaus 104",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2343,
+      "win_rate": 0.0717029449,
+      "wins": 168
+    },
+    {
+      "accepted_value": 3400096.36,
+      "average_quote_to_market_ratio": 0.9252165022,
+      "average_response_hours": 16.1412914798,
+      "dealer_id": "D0019",
+      "dealer_name": "Central Autohaus 019",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2230,
+      "win_rate": 0.069955157,
+      "wins": 156
+    },
+    {
+      "accepted_value": 2890009.7,
+      "average_quote_to_market_ratio": 0.9070693182,
+      "average_response_hours": 5.9914291958,
+      "dealer_id": "D0097",
+      "dealer_name": "Espace Autohaus 097",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2288,
+      "win_rate": 0.0690559441,
+      "wins": 158
+    },
+    {
+      "accepted_value": 3032074.22,
+      "average_quote_to_market_ratio": 0.917163805,
+      "average_response_hours": 13.011686799,
+      "dealer_id": "D0078",
+      "dealer_name": "Zurich Autohaus 078",
+      "dealer_region": "Zurich",
+      "quotes": 2318,
+      "win_rate": 0.0690250216,
+      "wins": 160
+    },
+    {
+      "accepted_value": 2848659.08,
+      "average_quote_to_market_ratio": 0.9177899827,
+      "average_response_hours": 16.9256778929,
+      "dealer_id": "D0016",
+      "dealer_name": "Eastern Autohaus 016",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2316,
+      "win_rate": 0.067357513,
+      "wins": 156
+    },
+    {
+      "accepted_value": 2756555.04,
+      "average_quote_to_market_ratio": 0.8918089232,
+      "average_response_hours": 10.8786572287,
+      "dealer_id": "D0075",
+      "dealer_name": "Zurich Autohaus 075",
+      "dealer_region": "Zurich",
+      "quotes": 2331,
+      "win_rate": 0.0669240669,
+      "wins": 156
+    },
+    {
+      "accepted_value": 3061331.97,
+      "average_quote_to_market_ratio": 0.903206283,
+      "average_response_hours": 8.7930448155,
+      "dealer_id": "D0143",
+      "dealer_name": "Ticino Autohaus 143",
+      "dealer_region": "Ticino",
+      "quotes": 2276,
+      "win_rate": 0.0667838313,
+      "wins": 152
+    },
+    {
+      "accepted_value": 2944443.84,
+      "average_quote_to_market_ratio": 0.9216702958,
+      "average_response_hours": 13.325505341,
+      "dealer_id": "D0148",
+      "dealer_name": "Eastern Autohaus 148",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2434,
+      "win_rate": 0.0608052588,
+      "wins": 148
+    },
+    {
+      "accepted_value": 2721530.85,
+      "average_quote_to_market_ratio": 0.9005794739,
+      "average_response_hours": 10.0766235446,
+      "dealer_id": "D0030",
+      "dealer_name": "Eastern Autohaus 030",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2319,
+      "win_rate": 0.0603708495,
+      "wins": 140
+    },
+    {
+      "accepted_value": 2580607.04,
+      "average_quote_to_market_ratio": 0.9034976934,
+      "average_response_hours": 13.9274853008,
+      "dealer_id": "D0057",
+      "dealer_name": "Central Autohaus 057",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2211,
+      "win_rate": 0.0583446404,
+      "wins": 129
+    },
+    {
+      "accepted_value": 2456140.93,
+      "average_quote_to_market_ratio": 0.9088475642,
+      "average_response_hours": 10.7131310895,
+      "dealer_id": "D0129",
+      "dealer_name": "Eastern Autohaus 129",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2258,
+      "win_rate": 0.0580159433,
+      "wins": 131
+    },
+    {
+      "accepted_value": 2685731.92,
+      "average_quote_to_market_ratio": 0.9002838458,
+      "average_response_hours": 11.8924642702,
+      "dealer_id": "D0081",
+      "dealer_name": "Central Autohaus 081",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2309,
+      "win_rate": 0.0576006929,
+      "wins": 133
+    },
+    {
+      "accepted_value": 2302472.59,
+      "average_quote_to_market_ratio": 0.8993062033,
+      "average_response_hours": 13.2155565332,
+      "dealer_id": "D0114",
+      "dealer_name": "Central Autohaus 114",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2273,
+      "win_rate": 0.0571931368,
+      "wins": 130
+    },
+    {
+      "accepted_value": 2134288.02,
+      "average_quote_to_market_ratio": 0.906373532,
+      "average_response_hours": 16.6720862989,
+      "dealer_id": "D0077",
+      "dealer_name": "Zurich Autohaus 077",
+      "dealer_region": "Zurich",
+      "quotes": 2248,
+      "win_rate": 0.0564946619,
+      "wins": 127
+    },
+    {
+      "accepted_value": 2587473.64,
+      "average_quote_to_market_ratio": 0.8807808301,
+      "average_response_hours": 5.9471801455,
+      "dealer_id": "D0013",
+      "dealer_name": "Ticino Autohaus 013",
+      "dealer_region": "Ticino",
+      "quotes": 2337,
+      "win_rate": 0.054771074,
+      "wins": 128
+    },
+    {
+      "accepted_value": 2390278.99,
+      "average_quote_to_market_ratio": 0.9050286835,
+      "average_response_hours": 10.2575588492,
+      "dealer_id": "D0051",
+      "dealer_name": "Central Autohaus 051",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2294,
+      "win_rate": 0.0544899738,
+      "wins": 125
+    },
+    {
+      "accepted_value": 2424628.05,
+      "average_quote_to_market_ratio": 0.9129122237,
+      "average_response_hours": 12.5373026613,
+      "dealer_id": "D0058",
+      "dealer_name": "Central Autohaus 058",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2217,
+      "win_rate": 0.0536761389,
+      "wins": 119
+    },
+    {
+      "accepted_value": 2220776.78,
+      "average_quote_to_market_ratio": 0.9072021886,
+      "average_response_hours": 11.1219023569,
+      "dealer_id": "D0042",
+      "dealer_name": "Ticino Autohaus 042",
+      "dealer_region": "Ticino",
+      "quotes": 2376,
+      "win_rate": 0.0517676768,
+      "wins": 123
+    },
+    {
+      "accepted_value": 2319478.97,
+      "average_quote_to_market_ratio": 0.8840291936,
+      "average_response_hours": 9.2667917206,
+      "dealer_id": "D0106",
+      "dealer_name": "Zurich Autohaus 106",
+      "dealer_region": "Zurich",
+      "quotes": 2319,
+      "win_rate": 0.0513152221,
+      "wins": 119
+    },
+    {
+      "accepted_value": 2347025.5,
+      "average_quote_to_market_ratio": 0.9058446389,
+      "average_response_hours": 9.5765820569,
+      "dealer_id": "D0023",
+      "dealer_name": "Eastern Autohaus 023",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2285,
+      "win_rate": 0.0512035011,
+      "wins": 117
+    },
+    {
+      "accepted_value": 2332811.19,
+      "average_quote_to_market_ratio": 0.8873832979,
+      "average_response_hours": 7.6469528262,
+      "dealer_id": "D0049",
+      "dealer_name": "Ticino Autohaus 049",
+      "dealer_region": "Ticino",
+      "quotes": 2353,
+      "win_rate": 0.050998725,
+      "wins": 120
+    },
+    {
+      "accepted_value": 2028050.07,
+      "average_quote_to_market_ratio": 0.8966273431,
+      "average_response_hours": 11.0352837489,
+      "dealer_id": "D0132",
+      "dealer_name": "Zurich Autohaus 132",
+      "dealer_region": "Zurich",
+      "quotes": 2326,
+      "win_rate": 0.0485812554,
+      "wins": 113
+    },
+    {
+      "accepted_value": 2169382.24,
+      "average_quote_to_market_ratio": 0.9190426966,
+      "average_response_hours": 14.574741573,
+      "dealer_id": "D0124",
+      "dealer_name": "Northwestern Autohaus 124",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2225,
+      "win_rate": 0.0453932584,
+      "wins": 101
+    },
+    {
+      "accepted_value": 1655082.56,
+      "average_quote_to_market_ratio": 0.895260574,
+      "average_response_hours": 8.4652362031,
+      "dealer_id": "D0149",
+      "dealer_name": "Ticino Autohaus 149",
+      "dealer_region": "Ticino",
+      "quotes": 2265,
+      "win_rate": 0.0432671082,
+      "wins": 98
+    },
+    {
+      "accepted_value": 1727665.89,
+      "average_quote_to_market_ratio": 0.893924155,
+      "average_response_hours": 12.2060387562,
+      "dealer_id": "D0088",
+      "dealer_name": "Espace Autohaus 088",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2219,
+      "win_rate": 0.043262731,
+      "wins": 96
+    },
+    {
+      "accepted_value": 1650393.28,
+      "average_quote_to_market_ratio": 0.8955475177,
+      "average_response_hours": 15.9916090426,
+      "dealer_id": "D0025",
+      "dealer_name": "Northwestern Autohaus 025",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2256,
+      "win_rate": 0.0429964539,
+      "wins": 97
+    },
+    {
+      "accepted_value": 1866903.13,
+      "average_quote_to_market_ratio": 0.9038666518,
+      "average_response_hours": 10.0173099155,
+      "dealer_id": "D0139",
+      "dealer_name": "Central Autohaus 139",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2249,
+      "win_rate": 0.0417963539,
+      "wins": 94
+    },
+    {
+      "accepted_value": 1715371.87,
+      "average_quote_to_market_ratio": 0.9038725181,
+      "average_response_hours": 14.8198167874,
+      "dealer_id": "D0068",
+      "dealer_name": "Northwestern Autohaus 068",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2347,
+      "win_rate": 0.0417554325,
+      "wins": 98
+    },
+    {
+      "accepted_value": 1762666.01,
+      "average_quote_to_market_ratio": 0.9040582926,
+      "average_response_hours": 6.2693374833,
+      "dealer_id": "D0138",
+      "dealer_name": "Ticino Autohaus 138",
+      "dealer_region": "Ticino",
+      "quotes": 2249,
+      "win_rate": 0.0413517119,
+      "wins": 93
+    },
+    {
+      "accepted_value": 1527071.31,
+      "average_quote_to_market_ratio": 0.8957133,
+      "average_response_hours": 10.923790286,
+      "dealer_id": "D0063",
+      "dealer_name": "Zurich Autohaus 063",
+      "dealer_region": "Zurich",
+      "quotes": 2203,
+      "win_rate": 0.0413073082,
+      "wins": 91
+    },
+    {
+      "accepted_value": 1419356.76,
+      "average_quote_to_market_ratio": 0.911038057,
+      "average_response_hours": 12.830258467,
+      "dealer_id": "D0053",
+      "dealer_name": "Lake Autohaus 053",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2244,
+      "win_rate": 0.0396613191,
+      "wins": 89
+    },
+    {
+      "accepted_value": 1586644.53,
+      "average_quote_to_market_ratio": 0.9092336336,
+      "average_response_hours": 11.3587644788,
+      "dealer_id": "D0034",
+      "dealer_name": "Espace Autohaus 034",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2331,
+      "win_rate": 0.039039039,
+      "wins": 91
+    },
+    {
+      "accepted_value": 1724431.36,
+      "average_quote_to_market_ratio": 0.8987543516,
+      "average_response_hours": 15.7796562228,
+      "dealer_id": "D0015",
+      "dealer_name": "Lake Autohaus 015",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2298,
+      "win_rate": 0.0387293299,
+      "wins": 89
+    },
+    {
+      "accepted_value": 1352983.25,
+      "average_quote_to_market_ratio": 0.8859136404,
+      "average_response_hours": 12.4612931798,
+      "dealer_id": "D0112",
+      "dealer_name": "Lake Autohaus 112",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2258,
+      "win_rate": 0.0376439327,
+      "wins": 85
+    },
+    {
+      "accepted_value": 1419689.6400000001,
+      "average_quote_to_market_ratio": 0.9017601339,
+      "average_response_hours": 7.5057678571,
+      "dealer_id": "D0054",
+      "dealer_name": "Central Autohaus 054",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2240,
+      "win_rate": 0.0370535714,
+      "wins": 83
+    },
+    {
+      "accepted_value": 1224713.75,
+      "average_quote_to_market_ratio": 0.8990200605,
+      "average_response_hours": 7.5994033722,
+      "dealer_id": "D0031",
+      "dealer_name": "Central Autohaus 031",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2313,
+      "win_rate": 0.0363164721,
+      "wins": 84
+    },
+    {
+      "accepted_value": 1370664.96,
+      "average_quote_to_market_ratio": 0.8930938123,
+      "average_response_hours": 6.7545598007,
+      "dealer_id": "D0011",
+      "dealer_name": "Lake Autohaus 011",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2408,
+      "win_rate": 0.0357142857,
+      "wins": 86
+    },
+    {
+      "accepted_value": 1231962.62,
+      "average_quote_to_market_ratio": 0.932438489,
+      "average_response_hours": 15.5200894055,
+      "dealer_id": "D0116",
+      "dealer_name": "Eastern Autohaus 116",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2237,
+      "win_rate": 0.0335270451,
+      "wins": 75
+    },
+    {
+      "accepted_value": 1190596.42,
+      "average_quote_to_market_ratio": 0.8764183913,
+      "average_response_hours": 7.2889434783,
+      "dealer_id": "D0046",
+      "dealer_name": "Northwestern Autohaus 046",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2300,
+      "win_rate": 0.0334782609,
+      "wins": 77
+    },
+    {
+      "accepted_value": 1185456.32,
+      "average_quote_to_market_ratio": 0.9029570248,
+      "average_response_hours": 14.3548673336,
+      "dealer_id": "D0091",
+      "dealer_name": "Northwestern Autohaus 091",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2299,
+      "win_rate": 0.0326228795,
+      "wins": 75
+    },
+    {
+      "accepted_value": 1141759.94,
+      "average_quote_to_market_ratio": 0.9135407912,
+      "average_response_hours": 12.5231736264,
+      "dealer_id": "D0009",
+      "dealer_name": "Eastern Autohaus 009",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2275,
+      "win_rate": 0.0325274725,
+      "wins": 74
+    },
+    {
+      "accepted_value": 1207391.3,
+      "average_quote_to_market_ratio": 0.8908452519,
+      "average_response_hours": 11.0670441373,
+      "dealer_id": "D0010",
+      "dealer_name": "Lake Autohaus 010",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2243,
+      "win_rate": 0.0320998663,
+      "wins": 72
+    },
+    {
+      "accepted_value": 1387782.89,
+      "average_quote_to_market_ratio": 0.8993318615,
+      "average_response_hours": 13.0111341991,
+      "dealer_id": "D0064",
+      "dealer_name": "Northwestern Autohaus 064",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2310,
+      "win_rate": 0.0316017316,
+      "wins": 73
+    },
+    {
+      "accepted_value": 1206331.22,
+      "average_quote_to_market_ratio": 0.8987461089,
+      "average_response_hours": 14.3952991453,
+      "dealer_id": "D0017",
+      "dealer_name": "Central Autohaus 017",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2223,
+      "win_rate": 0.0301394512,
+      "wins": 67
+    },
+    {
+      "accepted_value": 1231122.06,
+      "average_quote_to_market_ratio": 0.9154233766,
+      "average_response_hours": 25.1525670996,
+      "dealer_id": "D0071",
+      "dealer_name": "Eastern Autohaus 071",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2310,
+      "win_rate": 0.0298701299,
+      "wins": 69
+    },
+    {
+      "accepted_value": 984135.0700000001,
+      "average_quote_to_market_ratio": 0.89811379,
+      "average_response_hours": 13.6346352313,
+      "dealer_id": "D0093",
+      "dealer_name": "Central Autohaus 093",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2248,
+      "win_rate": 0.0298042705,
+      "wins": 67
+    },
+    {
+      "accepted_value": 1181740.87,
+      "average_quote_to_market_ratio": 0.8797670379,
+      "average_response_hours": 14.9015233853,
+      "dealer_id": "D0144",
+      "dealer_name": "Ticino Autohaus 144",
+      "dealer_region": "Ticino",
+      "quotes": 2245,
+      "win_rate": 0.0285077951,
+      "wins": 64
+    },
+    {
+      "accepted_value": 906060.1900000001,
+      "average_quote_to_market_ratio": 0.8908313793,
+      "average_response_hours": 13.9654913793,
+      "dealer_id": "D0039",
+      "dealer_name": "Central Autohaus 039",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2320,
+      "win_rate": 0.0267241379,
+      "wins": 62
+    },
+    {
+      "accepted_value": 950250.51,
+      "average_quote_to_market_ratio": 0.8816814702,
+      "average_response_hours": 10.9360939539,
+      "dealer_id": "D0102",
+      "dealer_name": "Central Autohaus 102",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2299,
+      "win_rate": 0.0265332753,
+      "wins": 61
+    },
+    {
+      "accepted_value": 973544.03,
+      "average_quote_to_market_ratio": 0.9004524978,
+      "average_response_hours": 12.3598028046,
+      "dealer_id": "D0038",
+      "dealer_name": "Lake Autohaus 038",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2282,
+      "win_rate": 0.0258545136,
+      "wins": 59
+    },
+    {
+      "accepted_value": 952069.35,
+      "average_quote_to_market_ratio": 0.8971945319,
+      "average_response_hours": 11.6905949256,
+      "dealer_id": "D0089",
+      "dealer_name": "Central Autohaus 089",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2286,
+      "win_rate": 0.0249343832,
+      "wins": 57
+    },
+    {
+      "accepted_value": 840239.96,
+      "average_quote_to_market_ratio": 0.8881368031,
+      "average_response_hours": 10.7424912892,
+      "dealer_id": "D0032",
+      "dealer_name": "Central Autohaus 032",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2296,
+      "win_rate": 0.0239547038,
+      "wins": 55
+    },
+    {
+      "accepted_value": 676173.17,
+      "average_quote_to_market_ratio": 0.8953553826,
+      "average_response_hours": 10.1667228707,
+      "dealer_id": "D0055",
+      "dealer_name": "Zurich Autohaus 055",
+      "dealer_region": "Zurich",
+      "quotes": 2313,
+      "win_rate": 0.0224816256,
+      "wins": 52
+    },
+    {
+      "accepted_value": 947820.6,
+      "average_quote_to_market_ratio": 0.9018653404,
+      "average_response_hours": 16.8055083996,
+      "dealer_id": "D0095",
+      "dealer_name": "Central Autohaus 095",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2262,
+      "win_rate": 0.0221043324,
+      "wins": 50
+    },
+    {
+      "accepted_value": 781669.36,
+      "average_quote_to_market_ratio": 0.8867785557,
+      "average_response_hours": 13.3986085425,
+      "dealer_id": "D0150",
+      "dealer_name": "Lake Autohaus 150",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2271,
+      "win_rate": 0.0215763981,
+      "wins": 49
+    },
+    {
+      "accepted_value": 628480.54,
+      "average_quote_to_market_ratio": 0.8824035202,
+      "average_response_hours": 10.7505693177,
+      "dealer_id": "D0066",
+      "dealer_name": "Lake Autohaus 066",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2301,
+      "win_rate": 0.0208604954,
+      "wins": 48
+    },
+    {
+      "accepted_value": 688951.59,
+      "average_quote_to_market_ratio": 0.8686778629,
+      "average_response_hours": 7.272899106,
+      "dealer_id": "D0127",
+      "dealer_name": "Central Autohaus 127",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2349,
+      "win_rate": 0.0208599404,
+      "wins": 49
+    },
+    {
+      "accepted_value": 685398.09,
+      "average_quote_to_market_ratio": 0.8770673298,
+      "average_response_hours": 14.3681255526,
+      "dealer_id": "D0074",
+      "dealer_name": "Eastern Autohaus 074",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2262,
+      "win_rate": 0.0190097259,
+      "wins": 43
+    },
+    {
+      "accepted_value": 629590.8,
+      "average_quote_to_market_ratio": 0.8791212578,
+      "average_response_hours": 13.4309743136,
+      "dealer_id": "D0043",
+      "dealer_name": "Central Autohaus 043",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2258,
+      "win_rate": 0.0186005314,
+      "wins": 42
+    },
+    {
+      "accepted_value": 602564.65,
+      "average_quote_to_market_ratio": 0.9018971862,
+      "average_response_hours": 20.5578249218,
+      "dealer_id": "D0125",
+      "dealer_name": "Ticino Autohaus 125",
+      "dealer_region": "Ticino",
+      "quotes": 2239,
+      "win_rate": 0.0183117463,
+      "wins": 41
+    },
+    {
+      "accepted_value": 598868.98,
+      "average_quote_to_market_ratio": 0.8742648978,
+      "average_response_hours": 10.0580208786,
+      "dealer_id": "D0004",
+      "dealer_name": "Eastern Autohaus 004",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2299,
+      "win_rate": 0.0182688125,
+      "wins": 42
+    },
+    {
+      "accepted_value": 700001.36,
+      "average_quote_to_market_ratio": 0.8875585157,
+      "average_response_hours": 17.1713813814,
+      "dealer_id": "D0080",
+      "dealer_name": "Eastern Autohaus 080",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2331,
+      "win_rate": 0.018018018,
+      "wins": 42
+    },
+    {
+      "accepted_value": 505465.62,
+      "average_quote_to_market_ratio": 0.886788283,
+      "average_response_hours": 7.4863001352,
+      "dealer_id": "D0115",
+      "dealer_name": "Zurich Autohaus 115",
+      "dealer_region": "Zurich",
+      "quotes": 2219,
+      "win_rate": 0.0153222172,
+      "wins": 34
+    },
+    {
+      "accepted_value": 528000.6,
+      "average_quote_to_market_ratio": 0.884646102,
+      "average_response_hours": 9.9571554994,
+      "dealer_id": "D0002",
+      "dealer_name": "Lake Autohaus 002",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2373,
+      "win_rate": 0.01517067,
+      "wins": 36
+    },
+    {
+      "accepted_value": 480751.84,
+      "average_quote_to_market_ratio": 0.8768034256,
+      "average_response_hours": 11.697790953,
+      "dealer_id": "D0079",
+      "dealer_name": "Lake Autohaus 079",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2277,
+      "win_rate": 0.0136144049,
+      "wins": 31
+    },
+    {
+      "accepted_value": 482856.21,
+      "average_quote_to_market_ratio": 0.8757628852,
+      "average_response_hours": 13.0886377847,
+      "dealer_id": "D0014",
+      "dealer_name": "Central Autohaus 014",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2239,
+      "win_rate": 0.0129522108,
+      "wins": 29
+    },
+    {
+      "accepted_value": 300980.86,
+      "average_quote_to_market_ratio": 0.8610347731,
+      "average_response_hours": 10.1720375218,
+      "dealer_id": "D0072",
+      "dealer_name": "Ticino Autohaus 072",
+      "dealer_region": "Ticino",
+      "quotes": 2292,
+      "win_rate": 0.0109075044,
+      "wins": 25
+    },
+    {
+      "accepted_value": 228010.89,
+      "average_quote_to_market_ratio": 0.8897740804,
+      "average_response_hours": 17.8359794696,
+      "dealer_id": "D0028",
+      "dealer_name": "Espace Autohaus 028",
+      "dealer_region": "Espace Mittelland",
+      "quotes": 2338,
+      "win_rate": 0.0089820359,
+      "wins": 21
+    },
+    {
+      "accepted_value": 171553.66,
+      "average_quote_to_market_ratio": 0.8602430568,
+      "average_response_hours": 9.0719737991,
+      "dealer_id": "D0142",
+      "dealer_name": "Eastern Autohaus 142",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2290,
+      "win_rate": 0.007860262,
+      "wins": 18
+    }
+  ],
+  "evidence": {
+    "accepted_quote_ratio": 0.9673125954903894,
+    "accepted_quote_response_hours": 10.188602451946773,
+    "conversion_8_hours_or_more": 0.29432350367968707,
+    "conversion_under_8_hours": 0.3327237441218183,
+    "dealer_competitiveness_win_correlation": 0.9020154131823024,
+    "dealer_referral_conversion_rate": 0.3842875671669446,
+    "dealer_referral_lift_pp_vs_social": 11.620172431474662,
+    "dealer_response_win_correlation": -0.09789169238721167,
+    "dealer_win_rate_median": 0.08182446785961574,
+    "dealer_win_rate_p10": 0.022051539010496786,
+    "dealer_win_rate_p90": 0.18139790684922433,
+    "inquiry_growth_2022_to_2025": 0.3206562266964952,
+    "nonaccepted_quote_ratio": 0.9156591599711575,
+    "nonaccepted_quote_response_hours": 12.277316131025957,
+    "older_to_newer_relative_spread_ratio": 2.032696034496538,
+    "referral_lift_pp_max_year": 12.544999551419911,
+    "referral_lift_pp_min_year": 10.292823706751802,
+    "response_lift_pp_max_year": 4.189122866249706,
+    "response_lift_pp_min_year": 3.270084199377127,
+    "social_media_conversion_rate": 0.268085842852198,
+    "suv_share_of_accepted_value": 0.5145450309507394
+  },
+  "kpis": {
+    "active_dealers": 136,
+    "average_fastest_response_hours": 5.866584613226733,
+    "average_quote_response_hours": 12.079694305199348,
+    "average_quote_spread": 1769.285178583952,
+    "average_quote_spread_pct": 0.10435600272509594,
+    "average_quotes_per_inquiry": 3.4376283650426296,
+    "average_sale_value": 21410.97753419172,
+    "conversion_rate": 0.3252482141604801,
+    "converted_inquiries": 32464,
+    "processed_data_quality_score": 1.0,
+    "quote_anomalies": 1162,
+    "quote_anomaly_rate": 0.0033865702961063185,
+    "raw_data_quality_score": 0.9994744197837068,
+    "total_accepted_value": 695085974.67,
+    "total_inquiries": 99813,
+    "total_quotes": 343120
+  },
+  "lead_source_by_year": [
+    {
+      "conversion_rate": 0.3860741579,
+      "conversions": 1364,
+      "inquiries": 3533,
+      "lead_source": "Dealer Referral",
+      "year": 2022
+    },
+    {
+      "conversion_rate": 0.2647299509,
+      "conversions": 647,
+      "inquiries": 2444,
+      "lead_source": "Social Media",
+      "year": 2022
+    },
+    {
+      "conversion_rate": 0.3869094748,
+      "conversions": 1466,
+      "inquiries": 3789,
+      "lead_source": "Dealer Referral",
+      "year": 2023
+    },
+    {
+      "conversion_rate": 0.2614594793,
+      "conversions": 713,
+      "inquiries": 2727,
+      "lead_source": "Social Media",
+      "year": 2023
+    },
+    {
+      "conversion_rate": 0.3908962928,
+      "conversions": 1666,
+      "inquiries": 4262,
+      "lead_source": "Dealer Referral",
+      "year": 2024
+    },
+    {
+      "conversion_rate": 0.2726983116,
+      "conversions": 856,
+      "inquiries": 3139,
+      "lead_source": "Social Media",
+      "year": 2024
+    },
+    {
+      "conversion_rate": 0.3746472759,
+      "conversions": 1726,
+      "inquiries": 4607,
+      "lead_source": "Dealer Referral",
+      "year": 2025
+    },
+    {
+      "conversion_rate": 0.2717190388,
+      "conversions": 882,
+      "inquiries": 3246,
+      "lead_source": "Social Media",
+      "year": 2025
+    }
+  ],
+  "lead_source_stability": [
+    {
+      "Dealer Referral": 0.3860741579,
+      "Social Media": 0.2647299509,
+      "referral_lift_percentage_points": 12.1344207039,
+      "year": 2022
+    },
+    {
+      "Dealer Referral": 0.3869094748,
+      "Social Media": 0.2614594793,
+      "referral_lift_percentage_points": 12.5449995514,
+      "year": 2023
+    },
+    {
+      "Dealer Referral": 0.3908962928,
+      "Social Media": 0.2726983116,
+      "referral_lift_percentage_points": 11.8197981256,
+      "year": 2024
+    },
+    {
+      "Dealer Referral": 0.3746472759,
+      "Social Media": 0.2717190388,
+      "referral_lift_percentage_points": 10.2928237068,
+      "year": 2025
+    }
+  ],
+  "lead_sources": [
+    {
+      "average_sale_value": 21386.8308325297,
+      "conversion_rate": 0.3842875672,
+      "conversions": 6222,
+      "fastest_response_hours": 5.8804706318,
+      "inquiries": 16191,
+      "lead_source": "Dealer Referral"
+    },
+    {
+      "average_sale_value": 21234.3352129532,
+      "conversion_rate": 0.3553470919,
+      "conversions": 2841,
+      "fastest_response_hours": 5.8639624765,
+      "inquiries": 7995,
+      "lead_source": "Partner"
+    },
+    {
+      "average_sale_value": 21209.4548731621,
+      "conversion_rate": 0.3405976556,
+      "conversions": 6189,
+      "fastest_response_hours": 5.8892069782,
+      "inquiries": 18171,
+      "lead_source": "Direct"
+    },
+    {
+      "average_sale_value": 21469.1700513406,
+      "conversion_rate": 0.3271743188,
+      "conversions": 8765,
+      "fastest_response_hours": 5.8677849944,
+      "inquiries": 26790,
+      "lead_source": "Organic Search"
+    },
+    {
+      "average_sale_value": 21621.3974088615,
+      "conversion_rate": 0.2799058085,
+      "conversions": 5349,
+      "fastest_response_hours": 5.8586232339,
+      "inquiries": 19110,
+      "lead_source": "Paid Search"
+    },
+    {
+      "average_sale_value": 21496.1008521627,
+      "conversion_rate": 0.2680858429,
+      "conversions": 3098,
+      "fastest_response_hours": 5.8237538941,
+      "inquiries": 11556,
+      "lead_source": "Social Media"
+    }
+  ],
+  "metadata": {
+    "analysis_grain": "Inquiry for conversion; quote for dealer competitiveness",
+    "currency": "CHF",
+    "dataset_type": "Synthetic",
+    "end_date": "2025-12-27",
+    "seed": 42,
+    "start_date": "2022-01-01"
+  },
+  "monthly": [
+    {
+      "accepted_value": 11274209.49,
+      "conversion_rate": 0.3135068154,
+      "conversions": 506,
+      "inquiries": 1614,
+      "month": "2022-01-01"
+    },
+    {
+      "accepted_value": 9774778.69,
+      "conversion_rate": 0.3113207547,
+      "conversions": 462,
+      "inquiries": 1484,
+      "month": "2022-02-01"
+    },
+    {
+      "accepted_value": 14679944.18,
+      "conversion_rate": 0.3374689826,
+      "conversions": 680,
+      "inquiries": 2015,
+      "month": "2022-03-01"
+    },
+    {
+      "accepted_value": 13695371.74,
+      "conversion_rate": 0.3342022941,
+      "conversions": 641,
+      "inquiries": 1918,
+      "month": "2022-04-01"
+    },
+    {
+      "accepted_value": 14936381.75,
+      "conversion_rate": 0.3464019851,
+      "conversions": 698,
+      "inquiries": 2015,
+      "month": "2022-05-01"
+    },
+    {
+      "accepted_value": 12451260.09,
+      "conversion_rate": 0.3204148472,
+      "conversions": 587,
+      "inquiries": 1832,
+      "month": "2022-06-01"
+    },
+    {
+      "accepted_value": 11755031.64,
+      "conversion_rate": 0.322266743,
+      "conversions": 563,
+      "inquiries": 1747,
+      "month": "2022-07-01"
+    },
+    {
+      "accepted_value": 11567806.88,
+      "conversion_rate": 0.3156976744,
+      "conversions": 543,
+      "inquiries": 1720,
+      "month": "2022-08-01"
+    },
+    {
+      "accepted_value": 13817642.08,
+      "conversion_rate": 0.3285502227,
+      "conversions": 664,
+      "inquiries": 2021,
+      "month": "2022-09-01"
+    },
+    {
+      "accepted_value": 14589685.59,
+      "conversion_rate": 0.3426294821,
+      "conversions": 688,
+      "inquiries": 2008,
+      "month": "2022-10-01"
+    },
+    {
+      "accepted_value": 11280506.25,
+      "conversion_rate": 0.3114166169,
+      "conversions": 521,
+      "inquiries": 1673,
+      "month": "2022-11-01"
+    },
+    {
+      "accepted_value": 9415855.04,
+      "conversion_rate": 0.300212917,
+      "conversions": 423,
+      "inquiries": 1409,
+      "month": "2022-12-01"
+    },
+    {
+      "accepted_value": 12453102.58,
+      "conversion_rate": 0.3297204792,
+      "conversions": 578,
+      "inquiries": 1753,
+      "month": "2023-01-01"
+    },
+    {
+      "accepted_value": 10913131.27,
+      "conversion_rate": 0.2957084068,
+      "conversions": 503,
+      "inquiries": 1701,
+      "month": "2023-02-01"
+    },
+    {
+      "accepted_value": 18173576.62,
+      "conversion_rate": 0.3641644325,
+      "conversions": 815,
+      "inquiries": 2238,
+      "month": "2023-03-01"
+    },
+    {
+      "accepted_value": 15931400.18,
+      "conversion_rate": 0.3404157044,
+      "conversions": 737,
+      "inquiries": 2165,
+      "month": "2023-04-01"
+    },
+    {
+      "accepted_value": 15769746.45,
+      "conversion_rate": 0.3290143452,
+      "conversions": 711,
+      "inquiries": 2161,
+      "month": "2023-05-01"
+    },
+    {
+      "accepted_value": 13255947.99,
+      "conversion_rate": 0.3033543996,
+      "conversions": 624,
+      "inquiries": 2057,
+      "month": "2023-06-01"
+    },
+    {
+      "accepted_value": 13816461.52,
+      "conversion_rate": 0.3320935175,
+      "conversions": 625,
+      "inquiries": 1882,
+      "month": "2023-07-01"
+    },
+    {
+      "accepted_value": 13486831.81,
+      "conversion_rate": 0.3094875698,
+      "conversions": 610,
+      "inquiries": 1971,
+      "month": "2023-08-01"
+    },
+    {
+      "accepted_value": 14792751.86,
+      "conversion_rate": 0.3360814743,
+      "conversions": 693,
+      "inquiries": 2062,
+      "month": "2023-09-01"
+    },
+    {
+      "accepted_value": 16186924.94,
+      "conversion_rate": 0.3367256637,
+      "conversions": 761,
+      "inquiries": 2260,
+      "month": "2023-10-01"
+    },
+    {
+      "accepted_value": 12493748.75,
+      "conversion_rate": 0.3060052219,
+      "conversions": 586,
+      "inquiries": 1915,
+      "month": "2023-11-01"
+    },
+    {
+      "accepted_value": 9938393.91,
+      "conversion_rate": 0.2927756654,
+      "conversions": 462,
+      "inquiries": 1578,
+      "month": "2023-12-01"
+    },
+    {
+      "accepted_value": 12348605.26,
+      "conversion_rate": 0.3136933988,
+      "conversions": 575,
+      "inquiries": 1833,
+      "month": "2024-01-01"
+    },
+    {
+      "accepted_value": 12548961.83,
+      "conversion_rate": 0.3101402373,
+      "conversions": 575,
+      "inquiries": 1854,
+      "month": "2024-02-01"
+    },
+    {
+      "accepted_value": 18583557.2,
+      "conversion_rate": 0.3497179694,
+      "conversions": 868,
+      "inquiries": 2482,
+      "month": "2024-03-01"
+    },
+    {
+      "accepted_value": 17387761.2,
+      "conversion_rate": 0.3395061728,
+      "conversions": 825,
+      "inquiries": 2430,
+      "month": "2024-04-01"
+    },
+    {
+      "accepted_value": 17921630.3,
+      "conversion_rate": 0.3469879518,
+      "conversions": 864,
+      "inquiries": 2490,
+      "month": "2024-05-01"
+    },
+    {
+      "accepted_value": 14515629.08,
+      "conversion_rate": 0.3062981423,
+      "conversions": 676,
+      "inquiries": 2207,
+      "month": "2024-06-01"
+    },
+    {
+      "accepted_value": 14001279.95,
+      "conversion_rate": 0.3217680608,
+      "conversions": 677,
+      "inquiries": 2104,
+      "month": "2024-07-01"
+    },
+    {
+      "accepted_value": 16466970.68,
+      "conversion_rate": 0.3188470067,
+      "conversions": 719,
+      "inquiries": 2255,
+      "month": "2024-08-01"
+    },
+    {
+      "accepted_value": 16927897.26,
+      "conversion_rate": 0.3344453711,
+      "conversions": 802,
+      "inquiries": 2398,
+      "month": "2024-09-01"
+    },
+    {
+      "accepted_value": 17697484.11,
+      "conversion_rate": 0.3418388011,
+      "conversions": 844,
+      "inquiries": 2469,
+      "month": "2024-10-01"
+    },
+    {
+      "accepted_value": 14029172.19,
+      "conversion_rate": 0.3168316832,
+      "conversions": 640,
+      "inquiries": 2020,
+      "month": "2024-11-01"
+    },
+    {
+      "accepted_value": 11259592.95,
+      "conversion_rate": 0.3271889401,
+      "conversions": 568,
+      "inquiries": 1736,
+      "month": "2024-12-01"
+    },
+    {
+      "accepted_value": 15067073.62,
+      "conversion_rate": 0.3267882188,
+      "conversions": 699,
+      "inquiries": 2139,
+      "month": "2025-01-01"
+    },
+    {
+      "accepted_value": 13769992.71,
+      "conversion_rate": 0.3173803526,
+      "conversions": 630,
+      "inquiries": 1985,
+      "month": "2025-02-01"
+    },
+    {
+      "accepted_value": 19120424.13,
+      "conversion_rate": 0.3418771202,
+      "conversions": 907,
+      "inquiries": 2653,
+      "month": "2025-03-01"
+    },
+    {
+      "accepted_value": 17674380.76,
+      "conversion_rate": 0.3173541434,
+      "conversions": 854,
+      "inquiries": 2691,
+      "month": "2025-04-01"
+    },
+    {
+      "accepted_value": 19308383.39,
+      "conversion_rate": 0.3402537486,
+      "conversions": 885,
+      "inquiries": 2601,
+      "month": "2025-05-01"
+    },
+    {
+      "accepted_value": 15557927.55,
+      "conversion_rate": 0.3128834356,
+      "conversions": 765,
+      "inquiries": 2445,
+      "month": "2025-06-01"
+    },
+    {
+      "accepted_value": 14373613.98,
+      "conversion_rate": 0.2993799823,
+      "conversions": 676,
+      "inquiries": 2258,
+      "month": "2025-07-01"
+    },
+    {
+      "accepted_value": 15677829.48,
+      "conversion_rate": 0.3073684211,
+      "conversions": 730,
+      "inquiries": 2375,
+      "month": "2025-08-01"
+    },
+    {
+      "accepted_value": 19443366.55,
+      "conversion_rate": 0.3493177388,
+      "conversions": 896,
+      "inquiries": 2565,
+      "month": "2025-09-01"
+    },
+    {
+      "accepted_value": 19084836.61,
+      "conversion_rate": 0.3345780433,
+      "conversions": 896,
+      "inquiries": 2678,
+      "month": "2025-10-01"
+    },
+    {
+      "accepted_value": 14648742.52,
+      "conversion_rate": 0.2991713912,
+      "conversions": 686,
+      "inquiries": 2293,
+      "month": "2025-11-01"
+    },
+    {
+      "accepted_value": 11220370.06,
+      "conversion_rate": 0.3182093164,
+      "conversions": 526,
+      "inquiries": 1653,
+      "month": "2025-12-01"
+    }
+  ],
+  "quality_issues": [
+    {
+      "action": "Keep first occurrence; quarantine later duplicate",
+      "affected_rows": 50,
+      "final_result": "50 row(s) excluded from the curated layer",
+      "issue_id": "DQ0001",
+      "issue_type": "duplicate_primary_key",
+      "table_name": "dim_customer"
+    },
+    {
+      "action": "Trim and case-normalize to approved lead-source values",
+      "affected_rows": 166,
+      "final_result": "Canonical categories restored",
+      "issue_id": "DQ0002",
+      "issue_type": "inconsistent_lead_source_text",
+      "table_name": "dim_customer"
+    },
+    {
+      "action": "Replace missing optional geography with explicit Unknown member",
+      "affected_rows": 200,
+      "final_result": "Rows retained; unknowns remain visible in reporting",
+      "issue_id": "DQ0003",
+      "issue_type": "missing_canton",
+      "table_name": "dim_customer"
+    },
+    {
+      "action": "Trim leading and trailing whitespace",
+      "affected_rows": 5,
+      "final_result": "Dealer labels standardized",
+      "issue_id": "DQ0004",
+      "issue_type": "dealer_name_whitespace",
+      "table_name": "dim_dealer"
+    },
+    {
+      "action": "Keep first occurrence; quarantine later duplicate",
+      "affected_rows": 2,
+      "final_result": "2 row(s) excluded from the curated layer",
+      "issue_id": "DQ0005",
+      "issue_type": "duplicate_primary_key",
+      "table_name": "dim_dealer"
+    },
+    {
+      "action": "Quarantine values that cannot be corrected without inventing business data",
+      "affected_rows": 77,
+      "final_result": "77 row(s) excluded from the curated layer",
+      "issue_id": "DQ0006",
+      "issue_type": "invalid_vehicle_domain",
+      "table_name": "dim_vehicle"
+    },
+    {
+      "action": "Replace missing optional fuel type with explicit Unknown member",
+      "affected_rows": 333,
+      "final_result": "Rows retained without inventing a fuel classification",
+      "issue_id": "DQ0007",
+      "issue_type": "missing_fuel_type",
+      "table_name": "dim_vehicle"
+    },
+    {
+      "action": "Take absolute value only when magnitude remains inside the accepted domain",
+      "affected_rows": 76,
+      "final_result": "Plausible sign errors corrected and retained",
+      "issue_id": "DQ0008",
+      "issue_type": "negative_mileage_sign_error",
+      "table_name": "dim_vehicle"
+    },
+    {
+      "action": "Downgrade conversion when its accepted quote is not loadable",
+      "affected_rows": 104,
+      "final_result": "Fact tables remain internally consistent; affected outcomes are not overstated",
+      "issue_id": "DQ0009",
+      "issue_type": "accepted_quote_removed_by_quality_rule",
+      "table_name": "fact_inquiry"
+    },
+    {
+      "action": "Keep first occurrence; quarantine later duplicate",
+      "affected_rows": 150,
+      "final_result": "150 row(s) excluded from the curated layer",
+      "issue_id": "DQ0010",
+      "issue_type": "duplicate_primary_key",
+      "table_name": "fact_inquiry"
+    },
+    {
+      "action": "Quarantine orphan inquiry until the parent entity is repaired",
+      "affected_rows": 76,
+      "final_result": "76 row(s) excluded from the curated layer",
+      "issue_id": "DQ0011",
+      "issue_type": "invalid_inquiry_foreign_key",
+      "table_name": "fact_inquiry"
+    },
+    {
+      "action": "Quarantine because time-series placement and date sequence are unknown",
+      "affected_rows": 111,
+      "final_result": "111 row(s) excluded from the curated layer",
+      "issue_id": "DQ0012",
+      "issue_type": "malformed_inquiry_date",
+      "table_name": "fact_inquiry"
+    },
+    {
+      "action": "Derive winner and final sale price from the single accepted quote",
+      "affected_rows": 48,
+      "final_result": "Commercial outcomes reconciled across both fact tables",
+      "issue_id": "DQ0013",
+      "issue_type": "winning_dealer_mismatch",
+      "table_name": "fact_inquiry"
+    },
+    {
+      "action": "Keep first occurrence; quarantine later duplicate",
+      "affected_rows": 517,
+      "final_result": "517 row(s) excluded from the curated layer",
+      "issue_id": "DQ0014",
+      "issue_type": "duplicate_primary_key",
+      "table_name": "fact_quote"
+    },
+    {
+      "action": "Quarantine malformed dates or impossible monetary amounts",
+      "affected_rows": 779,
+      "final_result": "779 row(s) excluded from the curated layer",
+      "issue_id": "DQ0015",
+      "issue_type": "invalid_quote_domain",
+      "table_name": "fact_quote"
+    },
+    {
+      "action": "Quarantine orphan quote until dealer or inquiry key is repaired",
+      "affected_rows": 973,
+      "final_result": "973 row(s) excluded from the curated layer",
+      "issue_id": "DQ0016",
+      "issue_type": "invalid_quote_foreign_key",
+      "table_name": "fact_quote"
+    },
+    {
+      "action": "Impute the dealer median, falling back to the portfolio median",
+      "affected_rows": 687,
+      "final_result": "Rows retained; imputation rule documented and reproducible",
+      "issue_id": "DQ0017",
+      "issue_type": "missing_response_time",
+      "table_name": "fact_quote"
+    },
+    {
+      "action": "Retain plausible positive quote and set anomaly_flag for review",
+      "affected_rows": 1162,
+      "final_result": "Outliers remain analytically visible without contaminating hard-validity checks",
+      "issue_id": "DQ0018",
+      "issue_type": "quote_to_market_anomaly",
+      "table_name": "fact_quote"
+    }
+  ],
+  "quality_metrics": [
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Required fields populated at the applicable table grain",
+      "metric_name": "completeness_rate",
+      "passed_records": 4701163,
+      "rate": 1.0,
+      "stage": "Processed",
+      "total_records": 4701163
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Passed checks divided by applicable checks across all four dimensions",
+      "metric_name": "overall_data_quality_score",
+      "passed_records": 7710401,
+      "rate": 1.0,
+      "stage": "Processed",
+      "total_records": 7710401
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Fact foreign keys resolve to curated parent records",
+      "metric_name": "referential_integrity_rate",
+      "passed_records": 985679,
+      "rate": 1.0,
+      "stage": "Processed",
+      "total_records": 985679
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Primary-key rows are unique at the declared table grain",
+      "metric_name": "uniqueness_rate",
+      "passed_records": 594467,
+      "rate": 1.0,
+      "stage": "Processed",
+      "total_records": 594467
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Values conform to documented types, dates, and business ranges",
+      "metric_name": "validity_rate",
+      "passed_records": 1429092,
+      "rate": 1.0,
+      "stage": "Processed",
+      "total_records": 1429092
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Required fields populated at the applicable table grain",
+      "metric_name": "completeness_rate",
+      "passed_records": 4721506,
+      "rate": 0.9997410396,
+      "stage": "Raw",
+      "total_records": 4722729
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Passed checks divided by applicable checks across all four dimensions",
+      "metric_name": "overall_data_quality_score",
+      "passed_records": 7743556,
+      "rate": 0.9994744198,
+      "stage": "Raw",
+      "total_records": 7747628
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Fact foreign keys resolve to curated parent records",
+      "metric_name": "referential_integrity_rate",
+      "passed_records": 990834,
+      "rate": 0.9996025132,
+      "stage": "Raw",
+      "total_records": 991228
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Primary-key rows are unique at the declared table grain",
+      "metric_name": "uniqueness_rate",
+      "passed_records": 596483,
+      "rate": 0.9987960523,
+      "stage": "Raw",
+      "total_records": 597202
+    },
+    {
+      "assessment_date": "2026-01-01",
+      "description": "Values conform to documented types, dates, and business ranges",
+      "metric_name": "validity_rate",
+      "passed_records": 1434733,
+      "rate": 0.9987914811,
+      "stage": "Raw",
+      "total_records": 1436469
+    }
+  ],
+  "response_bands": [
+    {
+      "average_sale_value": 21283.0846546922,
+      "conversion_rate": 0.340986506,
+      "inquiries": 30532,
+      "response_band": "<4 hours"
+    },
+    {
+      "average_sale_value": 21548.2637302559,
+      "conversion_rate": 0.327662989,
+      "inquiries": 49850,
+      "response_band": "4-8 hours"
+    },
+    {
+      "average_sale_value": 21269.8787090774,
+      "conversion_rate": 0.2964106523,
+      "inquiries": 18137,
+      "response_band": "8-16 hours"
+    },
+    {
+      "average_sale_value": 21182.7153721683,
+      "conversion_rate": 0.2663793103,
+      "inquiries": 1160,
+      "response_band": "16-24 hours"
+    },
+    {
+      "average_sale_value": 19003.3402941176,
+      "conversion_rate": 0.2537313433,
+      "inquiries": 134,
+      "response_band": "24+ hours"
+    }
+  ],
+  "response_by_year": [
+    {
+      "ci_95_high": 0.3092662283,
+      "ci_95_low": 0.2818097012,
+      "conversion_rate": 0.2953526775,
+      "conversions": 1252,
+      "inquiries": 4239,
+      "response_group": "8+ hours",
+      "year": 2022
+    },
+    {
+      "ci_95_high": 0.33953564,
+      "ci_95_low": 0.3254633083,
+      "conversion_rate": 0.3324621014,
+      "conversions": 5724,
+      "inquiries": 17217,
+      "response_group": "Under 8 hours",
+      "year": 2022
+    },
+    {
+      "ci_95_high": 0.3041511673,
+      "ci_95_low": 0.2775054931,
+      "conversion_rate": 0.2906481274,
+      "conversions": 1296,
+      "inquiries": 4459,
+      "response_group": "8+ hours",
+      "year": 2023
+    },
+    {
+      "ci_95_high": 0.3390293342,
+      "ci_95_low": 0.3257335676,
+      "conversion_rate": 0.3323480606,
+      "conversions": 6409,
+      "inquiries": 19284,
+      "response_group": "Under 8 hours",
+      "year": 2023
+    },
+    {
+      "ci_95_high": 0.3149191913,
+      "ci_95_low": 0.2897288056,
+      "conversion_rate": 0.3021751911,
+      "conversions": 1542,
+      "inquiries": 5103,
+      "response_group": "8+ hours",
+      "year": 2024
+    },
+    {
+      "ci_95_high": 0.3412621483,
+      "ci_95_low": 0.3285498188,
+      "conversion_rate": 0.3348760331,
+      "conversions": 7091,
+      "inquiries": 21175,
+      "response_group": "Under 8 hours",
+      "year": 2024
+    },
+    {
+      "ci_95_high": 0.3013281466,
+      "ci_95_low": 0.2776447412,
+      "conversion_rate": 0.2893428064,
+      "conversions": 1629,
+      "inquiries": 5630,
+      "response_group": "8+ hours",
+      "year": 2025
+    },
+    {
+      "ci_95_high": 0.3373839763,
+      "ci_95_low": 0.3251411887,
+      "conversion_rate": 0.3312340351,
+      "conversions": 7521,
+      "inquiries": 22706,
+      "response_group": "Under 8 hours",
+      "year": 2025
+    }
+  ],
+  "response_stability": [
+    {
+      "8+ hours": 0.2953526775,
+      "Under 8 hours": 0.3324621014,
+      "lift_percentage_points": 3.7109423893,
+      "year": 2022
+    },
+    {
+      "8+ hours": 0.2906481274,
+      "Under 8 hours": 0.3323480606,
+      "lift_percentage_points": 4.1699933186,
+      "year": 2023
+    },
+    {
+      "8+ hours": 0.3021751911,
+      "Under 8 hours": 0.3348760331,
+      "lift_percentage_points": 3.2700841994,
+      "year": 2024
+    },
+    {
+      "8+ hours": 0.2893428064,
+      "Under 8 hours": 0.3312340351,
+      "lift_percentage_points": 4.1891228662,
+      "year": 2025
+    }
+  ],
+  "top_brands": [
+    {
+      "accepted_value": 104687183.91,
+      "average_market_value": 20662.7644513761,
+      "average_sale_value": 19804.612922815,
+      "brand": "Volkswagen",
+      "conversion_rate": 0.3233027523,
+      "inquiries": 16350
+    },
+    {
+      "accepted_value": 80890514.89,
+      "average_market_value": 30178.367315617,
+      "average_sale_value": 29055.5010380747,
+      "brand": "Mercedes-Benz",
+      "conversion_rate": 0.3259189885,
+      "inquiries": 8542
+    },
+    {
+      "accepted_value": 80531343.33,
+      "average_market_value": 28631.4851513845,
+      "average_sale_value": 26897.576262525,
+      "brand": "BMW",
+      "conversion_rate": 0.322594548,
+      "inquiries": 9281
+    },
+    {
+      "accepted_value": 77121714.44,
+      "average_market_value": 27488.2637835703,
+      "average_sale_value": 26258.6702213143,
+      "brand": "Audi",
+      "conversion_rate": 0.3314150305,
+      "inquiries": 8862
+    },
+    {
+      "accepted_value": 51987951.47,
+      "average_market_value": 25054.3858612295,
+      "average_sale_value": 24135.5392154132,
+      "brand": "Tesla",
+      "conversion_rate": 0.3277541083,
+      "inquiries": 6572
+    },
+    {
+      "accepted_value": 46786177.05,
+      "average_market_value": 20304.9377994316,
+      "average_sale_value": 19088.6075275398,
+      "brand": "Skoda",
+      "conversion_rate": 0.3317092976,
+      "inquiries": 7389
+    },
+    {
+      "accepted_value": 38071158.72,
+      "average_market_value": 19009.4371926137,
+      "average_sale_value": 18181.0691117478,
+      "brand": "Toyota",
+      "conversion_rate": 0.3143672121,
+      "inquiries": 6661
+    },
+    {
+      "accepted_value": 32227081.31,
+      "average_market_value": 28972.3227537075,
+      "average_sale_value": 27950.6342671292,
+      "brand": "Volvo",
+      "conversion_rate": 0.3352718814,
+      "inquiries": 3439
+    },
+    {
+      "accepted_value": 22785057.84,
+      "average_market_value": 16880.5636454229,
+      "average_sale_value": 16427.5831578947,
+      "brand": "Ford",
+      "conversion_rate": 0.3214368482,
+      "inquiries": 4315
+    },
+    {
+      "accepted_value": 21474916.13,
+      "average_market_value": 52475.3451644988,
+      "average_sale_value": 49481.3735714286,
+      "brand": "Porsche",
+      "conversion_rate": 0.3320581484,
+      "inquiries": 1307
+    }
+  ],
+  "top_dealers": [
+    {
+      "accepted_value": 16920934.49,
+      "average_quote_to_market_ratio": 0.9828251307,
+      "average_response_hours": 6.1713196864,
+      "dealer_id": "D0111",
+      "dealer_name": "Ticino Autohaus 111",
+      "dealer_region": "Ticino",
+      "quotes": 2296,
+      "win_rate": 0.3175087108,
+      "wins": 729
+    },
+    {
+      "accepted_value": 16096932.09,
+      "average_quote_to_market_ratio": 1.0000485262,
+      "average_response_hours": 13.8212318522,
+      "dealer_id": "D0062",
+      "dealer_name": "Central Autohaus 062",
+      "dealer_region": "Central Switzerland",
+      "quotes": 2273,
+      "win_rate": 0.2938847338,
+      "wins": 668
+    },
+    {
+      "accepted_value": 13407529.87,
+      "average_quote_to_market_ratio": 0.9766660295,
+      "average_response_hours": 6.7536142485,
+      "dealer_id": "D0040",
+      "dealer_name": "Eastern Autohaus 040",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2302,
+      "win_rate": 0.2610773241,
+      "wins": 601
+    },
+    {
+      "accepted_value": 13746088.73,
+      "average_quote_to_market_ratio": 0.9823735833,
+      "average_response_hours": 7.6437837838,
+      "dealer_id": "D0090",
+      "dealer_name": "Eastern Autohaus 090",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2294,
+      "win_rate": 0.2428073235,
+      "wins": 557
+    },
+    {
+      "accepted_value": 12733535.61,
+      "average_quote_to_market_ratio": 0.9829455191,
+      "average_response_hours": 9.1401020408,
+      "dealer_id": "D0085",
+      "dealer_name": "Ticino Autohaus 085",
+      "dealer_region": "Ticino",
+      "quotes": 2254,
+      "win_rate": 0.2400177462,
+      "wins": 541
+    },
+    {
+      "accepted_value": 11959639.47,
+      "average_quote_to_market_ratio": 0.9659798165,
+      "average_response_hours": 14.7515377894,
+      "dealer_id": "D0126",
+      "dealer_name": "Eastern Autohaus 126",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2289,
+      "win_rate": 0.2341633901,
+      "wins": 536
+    },
+    {
+      "accepted_value": 10871572.98,
+      "average_quote_to_market_ratio": 0.9720236536,
+      "average_response_hours": 17.1606376562,
+      "dealer_id": "D0134",
+      "dealer_name": "Eastern Autohaus 134",
+      "dealer_region": "Eastern Switzerland",
+      "quotes": 2321,
+      "win_rate": 0.2089616545,
+      "wins": 485
+    },
+    {
+      "accepted_value": 11445092.82,
+      "average_quote_to_market_ratio": 0.9727805218,
+      "average_response_hours": 11.0059919028,
+      "dealer_id": "D0076",
+      "dealer_name": "Lake Autohaus 076",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2223,
+      "win_rate": 0.208277103,
+      "wins": 463
+    },
+    {
+      "accepted_value": 10522881.54,
+      "average_quote_to_market_ratio": 0.9543910268,
+      "average_response_hours": 9.0763883929,
+      "dealer_id": "D0146",
+      "dealer_name": "Lake Autohaus 146",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2240,
+      "win_rate": 0.2004464286,
+      "wins": 449
+    },
+    {
+      "accepted_value": 9978233.76,
+      "average_quote_to_market_ratio": 0.9448351768,
+      "average_response_hours": 11.9720852221,
+      "dealer_id": "D0108",
+      "dealer_name": "Lake Autohaus 108",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2206,
+      "win_rate": 0.19356301,
+      "wins": 427
+    },
+    {
+      "accepted_value": 9958873.75,
+      "average_quote_to_market_ratio": 0.9431328976,
+      "average_response_hours": 10.9135686275,
+      "dealer_id": "D0035",
+      "dealer_name": "Northwestern Autohaus 035",
+      "dealer_region": "Northwestern Switzerland",
+      "quotes": 2295,
+      "win_rate": 0.1934640523,
+      "wins": 444
+    },
+    {
+      "accepted_value": 9806692.41,
+      "average_quote_to_market_ratio": 0.9551722471,
+      "average_response_hours": 13.8255461056,
+      "dealer_id": "D0094",
+      "dealer_name": "Ticino Autohaus 094",
+      "dealer_region": "Ticino",
+      "quotes": 2234,
+      "win_rate": 0.1920322292,
+      "wins": 429
+    },
+    {
+      "accepted_value": 9934946.64,
+      "average_quote_to_market_ratio": 0.9493454505,
+      "average_response_hours": 13.2241237113,
+      "dealer_id": "D0020",
+      "dealer_name": "Lake Autohaus 020",
+      "dealer_region": "Lake Geneva",
+      "quotes": 2231,
+      "win_rate": 0.1887046168,
+      "wins": 421
+    },
+    {
+      "accepted_value": 10139617.06,
+      "average_quote_to_market_ratio": 0.9421562861,
+      "average_response_hours": 13.548289649,
+      "dealer_id": "D0050",
+      "dealer_name": "Ticino Autohaus 050",
+      "dealer_region": "Ticino",
+      "quotes": 2251,
+      "win_rate": 0.1843625056,
+      "wins": 415
+    },
+    {
+      "accepted_value": 9326440.02,
+      "average_quote_to_market_ratio": 0.9588800179,
+      "average_response_hours": 16.721721055,
+      "dealer_id": "D0041",
+      "dealer_name": "Ticino Autohaus 041",
+      "dealer_region": "Ticino",
+      "quotes": 2237,
+      "win_rate": 0.1814930711,
+      "wins": 406
+    }
+  ],
+  "vehicle_age_bands": [
+    {
+      "average_quote_spread": 2671.9515974049,
+      "average_quote_spread_pct": 0.0789735123,
+      "conversion_rate": 0.3196612002,
+      "inquiries": 27745,
+      "vehicle_age_band": "0-2 years"
+    },
+    {
+      "average_quote_spread": 1894.4285958123,
+      "average_quote_spread_pct": 0.0946210484,
+      "conversion_rate": 0.3228303249,
+      "inquiries": 34625,
+      "vehicle_age_band": "3-5 years"
+    },
+    {
+      "average_quote_spread": 1201.9750509626,
+      "average_quote_spread_pct": 0.1175756997,
+      "conversion_rate": 0.3257967966,
+      "inquiries": 24724,
+      "vehicle_age_band": "6-9 years"
+    },
+    {
+      "average_quote_spread": 562.3196139634,
+      "average_quote_spread_pct": 0.1605291454,
+      "conversion_rate": 0.3429514899,
+      "inquiries": 12719,
+      "vehicle_age_band": "10+ years"
+    }
+  ],
+  "vehicle_segments": [
+    {
+      "accepted_value": 357653034.35,
+      "average_market_value": 25209.8157202157,
+      "conversion_rate": 0.3345590723,
+      "inquiries": 44327,
+      "vehicle_type": "Suv"
+    },
+    {
+      "accepted_value": 156590724.08,
+      "average_market_value": 16222.8554923171,
+      "conversion_rate": 0.3128457283,
+      "inquiries": 32540,
+      "vehicle_type": "Hatchback"
+    },
+    {
+      "accepted_value": 86881055.24,
+      "average_market_value": 27289.1927396478,
+      "conversion_rate": 0.3191813422,
+      "inquiries": 10505,
+      "vehicle_type": "Sedan"
+    },
+    {
+      "accepted_value": 67666331.29,
+      "average_market_value": 22001.0862088536,
+      "conversion_rate": 0.3353627077,
+      "inquiries": 9691,
+      "vehicle_type": "Estate"
+    },
+    {
+      "accepted_value": 17989572.44,
+      "average_market_value": 26234.1538153977,
+      "conversion_rate": 0.3122075712,
+      "inquiries": 2351,
+      "vehicle_type": "Van"
+    },
+    {
+      "accepted_value": 8305257.27,
+      "average_market_value": 70143.8067669173,
+      "conversion_rate": 0.2932330827,
+      "inquiries": 399,
+      "vehicle_type": "Sports"
+    }
+  ]
+}
