@@ -1,0 +1,35 @@
+relationship 'Inquiry Date'
+	fromColumn: 'Fact Inquiry'.inquiry_date
+	toColumn: 'Dim Date'.date
+
+relationship 'Inquiry Customer'
+	fromColumn: 'Fact Inquiry'.customer_id
+	toColumn: 'Dim Customer'.customer_id
+
+relationship 'Inquiry Vehicle'
+	fromColumn: 'Fact Inquiry'.vehicle_id
+	toColumn: 'Dim Vehicle'.vehicle_id
+
+relationship 'Quote Inquiry'
+	fromColumn: 'Fact Quote'.inquiry_id
+	toColumn: 'Fact Inquiry'.inquiry_id
+
+relationship 'Quote Dealer'
+	fromColumn: 'Fact Quote'.dealer_id
+	toColumn: 'Dim Dealer'.dealer_id
+
+relationship 'Quote Date'
+	isActive: false
+	fromColumn: 'Fact Quote'.quote_date
+	toColumn: 'Dim Date'.date
+
+relationship 8e532085-eed7-4f51-8593-f5ad2df0471f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Dim Customer'.customer_created_date
+	toColumn: LocalDateTable_5a2fcf08-542e-4ab2-b21b-15e6c03738e8.Date
+
+relationship c4b64b4b-5bff-45f5-aebb-78843c4b665a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Data Quality Metrics'.assessment_date
+	toColumn: LocalDateTable_2a7b7131-5055-4220-83ac-48f7d319b927.Date
+

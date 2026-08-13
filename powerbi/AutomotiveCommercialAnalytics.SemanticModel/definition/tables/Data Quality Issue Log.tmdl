@@ -1,0 +1,59 @@
+table 'Data Quality Issue Log'
+	lineageTag: d78a4100-2e5c-4463-9307-0f42348b312c
+
+	measure 'Affected Rows' = SUM ( 'Data Quality Issue Log'[affected_rows] )
+		formatString: #,##0
+		displayFolder: Data Quality
+		lineageTag: 29ae4401-122b-4f3f-8fc0-c19ac6ea2552
+
+	column issue_id
+		dataType: string
+		isHidden
+		lineageTag: 10e517eb-ae08-457f-bd68-1882cf6057c3
+		summarizeBy: none
+		sourceColumn: issue_id
+
+	column table_name
+		dataType: string
+		lineageTag: 0d7644b3-8922-406a-b912-1ff4d2b40424
+		summarizeBy: none
+		sourceColumn: table_name
+
+	column issue_type
+		dataType: string
+		lineageTag: 67225198-f232-44b3-9189-300ecab4de5a
+		summarizeBy: none
+		sourceColumn: issue_type
+
+	column affected_rows
+		dataType: int64
+		lineageTag: f27027ec-d530-4ac1-a11a-6bc2abea1e2c
+		summarizeBy: none
+		sourceColumn: affected_rows
+
+	column action
+		dataType: string
+		lineageTag: 3a53ef75-27ef-414e-ae03-ff38557e55bb
+		summarizeBy: none
+		sourceColumn: action
+
+	column final_result
+		dataType: string
+		lineageTag: fbd9ecbf-d6d2-4ab1-ae84-e56540df28ce
+		summarizeBy: none
+		sourceColumn: final_result
+
+	column 'Issue Category' = SWITCH ( TRUE (), CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "duplicate" ), "Duplicate keys", CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "foreign_key" ), "Referential integrity", CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "missing" ), "Missing values", CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "domain" ), "Invalid domain values", CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "anomaly" ), "Pricing anomalies", CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "date" ), "Invalid dates", CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "whitespace" ) || CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "text" ), "Standardisation", CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "mismatch" ) || CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "removed" ) || CONTAINSSTRING ( 'Data Quality Issue Log'[issue_type], "sign_error" ), "Business-rule correction", "Other" )
+		dataType: string
+		lineageTag: dd9277a8-4f48-4648-97cc-cd90e63c61f7
+		summarizeBy: none
+
+	partition 'Data Quality Issue Log' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="data_quality_issue_log"]}[Data]
+				in
+					Data
+

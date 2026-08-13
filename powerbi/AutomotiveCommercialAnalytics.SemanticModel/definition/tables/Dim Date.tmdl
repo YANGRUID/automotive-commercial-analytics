@@ -1,0 +1,72 @@
+table 'Dim Date'
+	lineageTag: bf944b2a-de04-41ea-9f4a-d494b9440ffa
+	dataCategory: Time
+
+	column date
+		dataType: dateTime
+		isKey
+		formatString: Short Date
+		lineageTag: 80c54dac-efdd-43cd-afaf-51b2eeac1da8
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column year
+		dataType: int64
+		lineageTag: b2993158-dd47-41f9-846c-afd4e812ecf3
+		summarizeBy: none
+		sourceColumn: year
+
+	column quarter
+		dataType: string
+		lineageTag: bc0d61e1-48be-4657-b57b-fa47dc299636
+		summarizeBy: none
+		sourceColumn: quarter
+
+	column month
+		dataType: int64
+		lineageTag: 53e74bb4-c70d-4c9d-bf79-785622e27b02
+		summarizeBy: none
+		sourceColumn: month
+
+	column month_name
+		dataType: string
+		lineageTag: 6fa64287-68b0-4c59-bdb6-e564209e937a
+		summarizeBy: none
+		sourceColumn: month_name
+		sortByColumn: month
+
+	column week
+		dataType: int64
+		lineageTag: 7b7fc6d4-7010-4159-8952-fe53ebe83664
+		summarizeBy: none
+		sourceColumn: week
+
+	column day_of_week
+		dataType: string
+		lineageTag: 90b3e1fd-0dc0-40cc-8bf4-1b0ef7d8d131
+		summarizeBy: none
+		sourceColumn: day_of_week
+
+	column is_weekend
+		dataType: boolean
+		lineageTag: 77badd66-ce32-405c-9f35-00b358ba5645
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+	column 'Month Start' = DATE ( 'Dim Date'[year], 'Dim Date'[month], 1 )
+		dataType: dateTime
+		formatString: MMM yyyy
+		lineageTag: 231a304d-186d-4d96-9906-4612a5c5c8bb
+		summarizeBy: none
+
+	partition 'Dim Date' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="dim_date"]}[Data]
+				in
+					Data
+

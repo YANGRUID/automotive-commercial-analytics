@@ -1,0 +1,94 @@
+table 'Dim Dealer'
+	lineageTag: aa304f51-513f-45a2-a047-f87154991a8d
+
+	measure 'Average Response Time' = AVERAGE ( 'Fact Quote'[response_time_hours] )
+		formatString: 0.0 "h"
+		displayFolder: Dealer
+		lineageTag: 0d052a1a-b15a-49f7-9e88-594bc5129373
+
+	measure 'Dealer Wins' = CALCULATE ( [Total Quotes], KEEPFILTERS ( 'Fact Quote'[accepted_flag] = TRUE () ) )
+		formatString: #,##0
+		displayFolder: Dealer
+		lineageTag: d62ca883-bc16-4642-808c-423629921ab6
+
+	measure 'Dealer Win Rate' = DIVIDE ( [Dealer Wins], [Total Quotes] )
+		formatString: 0.0%
+		displayFolder: Dealer
+		lineageTag: 2fcd0dc1-e6be-4676-bf34-9cbed467d540
+
+	measure 'Average Dealer Competitiveness' = AVERAGE ( 'Fact Quote'[quote_to_market_ratio] )
+		formatString: 0.0%
+		displayFolder: Dealer
+		lineageTag: 402cf123-8daf-43c2-b084-9bb4abae4de1
+
+	measure 'Dealer Accepted Value' = CALCULATE ( SUM ( 'Fact Quote'[quote_amount] ), KEEPFILTERS ( 'Fact Quote'[accepted_flag] = TRUE () ) )
+		formatString: CHF #,##0
+		displayFolder: Dealer
+		lineageTag: 7ff3f0b0-4497-49e5-9221-0dd6a938c985
+
+	measure 'Active Dealers' = CALCULATE ( DISTINCTCOUNT ( 'Dim Dealer'[dealer_id] ), KEEPFILTERS ( 'Dim Dealer'[active_flag] = TRUE () ) )
+		formatString: #,##0
+		displayFolder: Dealer
+		lineageTag: cab9ec65-8458-4408-b576-327e253744b4
+
+	measure 'Dealer Rank' = IF ( [Total Quotes] >= 250, RANKX ( FILTER ( ALLSELECTED ( 'Dim Dealer'[dealer_id], 'Dim Dealer'[dealer_name] ), CALCULATE ( [Total Quotes] ) >= 250 ), [Dealer Win Rate], , DESC, DENSE ) )
+		formatString: #,##0
+		displayFolder: Dealer
+		lineageTag: 20bf8f6b-31fd-4aca-ba2e-5d0a0e521ef0
+
+	measure 'Dealer Win Rate Top 7' = IF ( [Dealer Rank] <= 7, [Dealer Win Rate] )
+		formatString: 0.0%
+		displayFolder: Dealer
+		lineageTag: 41d95309-1e0e-4abf-a6b8-4a25aa8a5a74
+
+	measure 'Dealer Accepted Value Top 5' = VAR DealerValueRank = RANKX ( FILTER ( ALLSELECTED ( 'Dim Dealer'[dealer_id], 'Dim Dealer'[dealer_name] ), CALCULATE ( [Total Quotes] ) >= 250 ), [Dealer Accepted Value], , DESC, DENSE ) RETURN IF ( DealerValueRank <= 5, [Dealer Accepted Value] )
+		formatString: CHF #,##0
+		displayFolder: Dealer
+		lineageTag: b4685d6e-b3b1-43d5-ae21-4ebcc9665172
+
+	column dealer_id
+		dataType: string
+		isHidden
+		lineageTag: 12f655dc-5813-4b7d-b0e2-fc74706da3f0
+		summarizeBy: none
+		sourceColumn: dealer_id
+
+	column dealer_name
+		dataType: string
+		lineageTag: 991fca35-a8f3-4980-8804-87db21a6a8dd
+		summarizeBy: none
+		sourceColumn: dealer_name
+
+	column dealer_region
+		dataType: string
+		lineageTag: 5dcf8d72-93ab-4453-9838-2b5909baab97
+		summarizeBy: none
+		sourceColumn: dealer_region
+
+	column dealer_type
+		dataType: string
+		lineageTag: 8016aa55-f076-4eb5-be55-019743d5f9f9
+		summarizeBy: none
+		sourceColumn: dealer_type
+
+	column dealer_rating
+		dataType: double
+		lineageTag: 54b11f40-ac1d-468d-b9c2-411259561ec5
+		summarizeBy: none
+		sourceColumn: dealer_rating
+
+	column active_flag
+		dataType: boolean
+		lineageTag: 2921a649-e422-42da-a19f-557f8cb38283
+		summarizeBy: none
+		sourceColumn: active_flag
+
+	partition 'Dim Dealer' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="dim_dealer"]}[Data]
+				in
+					Data
+

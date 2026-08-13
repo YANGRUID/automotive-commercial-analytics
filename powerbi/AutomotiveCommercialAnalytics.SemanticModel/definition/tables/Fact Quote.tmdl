@@ -1,0 +1,147 @@
+table 'Fact Quote'
+	lineageTag: 89bd06cc-fc0b-4807-84e6-c99f46e45884
+
+	measure 'Total Quotes' = DISTINCTCOUNT ( 'Fact Quote'[quote_id] )
+		formatString: #,##0
+		displayFolder: Volume
+		lineageTag: e6028fb3-7c3c-4623-ae96-bd5aafe7bb40
+
+	measure 'Total Quotes by Quote Date' = CALCULATE ( [Total Quotes], USERELATIONSHIP ( 'Dim Date'[date], 'Fact Quote'[quote_date] ), CROSSFILTER ( 'Dim Date'[date], 'Fact Inquiry'[inquiry_date], NONE ) )
+		formatString: #,##0
+		displayFolder: Volume
+		lineageTag: cc03147a-b63c-4b14-8856-3e1f76fe9a98
+
+	measure 'Average Quote' = AVERAGE ( 'Fact Quote'[quote_amount] )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: 64655bc4-87ee-4dbc-992a-6c79475b6339
+
+	measure 'Maximum Quote' = MAX ( 'Fact Quote'[quote_amount] )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: a559e39c-3139-494e-a1f0-fd3a1194aaf9
+
+	measure 'Minimum Quote' = MIN ( 'Fact Quote'[quote_amount] )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: bfcf1910-a887-4c56-8fc9-ac9c8486768f
+
+	measure 'Median Quote' = MEDIAN ( 'Fact Quote'[quote_amount] )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: 7bcfe0d7-d384-48a4-b855-086e0eb57006
+
+	measure 'Total Accepted Quote Value' = CALCULATE ( SUM ( 'Fact Quote'[quote_amount] ), KEEPFILTERS ( 'Fact Quote'[accepted_flag] = TRUE () ) )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: 2ea861f8-2722-4cfc-800b-5ecf51466d0f
+
+	measure 'Quote-to-Market Ratio' = DIVIDE ( SUM ( 'Fact Quote'[quote_amount] ), SUM ( 'Fact Quote'[estimated_market_value] ) )
+		formatString: 0.0%
+		displayFolder: Pricing
+		lineageTag: 47c43585-d4fd-430b-bd80-1f67c7ca506c
+
+	measure 'Quote Anomalies' = CALCULATE ( [Total Quotes], KEEPFILTERS ( 'Fact Quote'[anomaly_flag] = TRUE () ) )
+		formatString: #,##0
+		displayFolder: Pricing
+		lineageTag: 8f417c99-3406-4e5f-8bdf-5c8422892097
+
+	measure 'Quote Anomaly Rate' = DIVIDE ( [Quote Anomalies], [Total Quotes] )
+		formatString: 0.00%
+		displayFolder: Pricing
+		lineageTag: 3a61180a-7931-4208-be81-71ed34f8c53f
+
+	measure 'Average Estimated Market Value' = AVERAGE ( 'Fact Quote'[estimated_market_value] )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: 17e65dea-c81f-4a87-875a-f16d5068d05f
+
+	column quote_id
+		dataType: string
+		isHidden
+		lineageTag: d6748c68-a215-415d-a23b-3cb66fd53aab
+		summarizeBy: none
+		sourceColumn: quote_id
+
+	column inquiry_id
+		dataType: string
+		isHidden
+		lineageTag: 765d726a-9d8f-4bcc-bf6b-aa172589841c
+		summarizeBy: none
+		sourceColumn: inquiry_id
+
+	column dealer_id
+		dataType: string
+		isHidden
+		lineageTag: a5980a29-cd7e-4b62-8cb7-51a1471cbbd1
+		summarizeBy: none
+		sourceColumn: dealer_id
+
+	column quote_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: a70dc181-a8e4-4559-8a9a-c2dadab2d998
+		summarizeBy: none
+		sourceColumn: quote_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column quote_amount
+		dataType: double
+		lineageTag: f205e98f-6879-4f15-98b6-45322c9f0497
+		summarizeBy: sum
+		sourceColumn: quote_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column response_time_hours
+		dataType: double
+		lineageTag: beccfddb-18fd-441f-a639-d12a3d67fc68
+		summarizeBy: none
+		sourceColumn: response_time_hours
+
+	column quote_rank
+		dataType: int64
+		lineageTag: 75674515-4427-4f80-bda4-da5fb90334f2
+		summarizeBy: none
+		sourceColumn: quote_rank
+
+	column accepted_flag
+		dataType: boolean
+		lineageTag: 72ed0c49-1f8b-4d1d-b96c-19ef4f172187
+		summarizeBy: none
+		sourceColumn: accepted_flag
+
+	column estimated_market_value
+		dataType: double
+		lineageTag: 0039b7d7-b36c-43ba-8b8d-8a040f8bd7b2
+		summarizeBy: sum
+		sourceColumn: estimated_market_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column quote_to_market_ratio
+		dataType: double
+		lineageTag: 2c71cc17-5d4a-4768-b9ad-bd9af5425436
+		summarizeBy: none
+		sourceColumn: quote_to_market_ratio
+
+	column anomaly_flag
+		dataType: boolean
+		lineageTag: 51ddc8b3-2daf-4c9f-a32b-e4ddf13c0b4a
+		summarizeBy: none
+		sourceColumn: anomaly_flag
+
+	partition 'Fact Quote' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="fact_quote"]}[Data]
+				in
+					Data
+

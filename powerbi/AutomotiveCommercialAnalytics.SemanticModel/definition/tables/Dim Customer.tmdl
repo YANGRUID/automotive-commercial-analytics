@@ -1,0 +1,63 @@
+table 'Dim Customer'
+	lineageTag: 56b26229-b279-476f-9f22-bf85095f0fc2
+
+	column customer_id
+		dataType: string
+		isHidden
+		lineageTag: c9441697-9d10-4470-b80a-c892e0adc28a
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column customer_created_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: d940c03a-495c-48f2-bed6-f4562e81a592
+		summarizeBy: none
+		sourceColumn: customer_created_date
+
+		variation Variation
+			isDefault
+			relationship: 8e532085-eed7-4f51-8593-f5ad2df0471f
+			defaultHierarchy: LocalDateTable_5a2fcf08-542e-4ab2-b21b-15e6c03738e8.'Date Hierarchy'
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column age_group
+		dataType: string
+		lineageTag: 8b3513b0-da5b-4a69-8aca-2d8554df5e74
+		summarizeBy: none
+		sourceColumn: age_group
+
+	column canton
+		dataType: string
+		lineageTag: a2deee32-75ae-48bb-98ed-773d7c371067
+		summarizeBy: none
+		sourceColumn: canton
+
+	column customer_type
+		dataType: string
+		lineageTag: 84d447ef-c811-4967-9237-cec87ea654f2
+		summarizeBy: none
+		sourceColumn: customer_type
+
+	column preferred_contact_method
+		dataType: string
+		lineageTag: d0f62979-7f2e-43ba-9330-a3fca9919ad2
+		summarizeBy: none
+		sourceColumn: preferred_contact_method
+
+	column lead_source
+		dataType: string
+		lineageTag: 4fdb09fb-58f5-48f8-b23e-8043e82150ba
+		summarizeBy: none
+		sourceColumn: lead_source
+
+	partition 'Dim Customer' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="dim_customer"]}[Data]
+				in
+					Data
+

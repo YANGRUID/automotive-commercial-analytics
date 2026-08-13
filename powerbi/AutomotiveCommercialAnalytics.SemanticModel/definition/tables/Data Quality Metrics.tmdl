@@ -1,0 +1,123 @@
+table 'Data Quality Metrics'
+	lineageTag: c1c4ddca-0cbd-4408-919a-de1a9f63859c
+
+	measure 'Data Quality Metric Rate' = MAX ( 'Data Quality Metrics'[rate] )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: 6de784b6-7b36-4060-8ab1-2f8fbcd0e1e0
+
+	measure 'Data Quality Score' = CALCULATE ( [Data Quality Metric Rate], 'Data Quality Metrics'[stage] = "Processed", 'Data Quality Metrics'[metric_name] = "overall_data_quality_score" )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: 4dca3c36-8d87-41a3-be70-f2dcf8629462
+
+	measure 'Completeness Rate' = CALCULATE ( [Data Quality Metric Rate], 'Data Quality Metrics'[stage] = "Processed", 'Data Quality Metrics'[metric_name] = "completeness_rate" )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: 9863681c-7bd7-418c-9641-d3f33043b6a8
+
+	measure 'Validity Rate' = CALCULATE ( [Data Quality Metric Rate], 'Data Quality Metrics'[stage] = "Processed", 'Data Quality Metrics'[metric_name] = "validity_rate" )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: 87a178f5-67e7-44ea-9d47-01d6106d64b4
+
+	measure 'Uniqueness Rate' = CALCULATE ( [Data Quality Metric Rate], 'Data Quality Metrics'[stage] = "Processed", 'Data Quality Metrics'[metric_name] = "uniqueness_rate" )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: 8643410f-76e9-4c23-84d2-bc76f1aa6606
+
+	measure 'Referential Integrity Rate' = CALCULATE ( [Data Quality Metric Rate], 'Data Quality Metrics'[stage] = "Processed", 'Data Quality Metrics'[metric_name] = "referential_integrity_rate" )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: 19acc515-d89a-44f4-9566-0e00cbbd4586
+
+	measure 'Raw Data Quality Rate' = CALCULATE ( [Data Quality Metric Rate], REMOVEFILTERS ( 'Data Quality Metrics'[stage] ), 'Data Quality Metrics'[stage] = "Raw" )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: e039232f-973a-4f10-a1d0-efc6f31219ed
+
+	measure 'Raw Data Quality Score' = CALCULATE ( [Data Quality Metric Rate], REMOVEFILTERS ( 'Data Quality Metrics'[stage] ), REMOVEFILTERS ( 'Data Quality Metrics'[metric_name] ), 'Data Quality Metrics'[stage] = "Raw", 'Data Quality Metrics'[metric_name] = "overall_data_quality_score" )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: 847543cd-686d-4ad1-a7bf-58923f7774aa
+
+	measure 'Processed Data Quality Rate' = CALCULATE ( [Data Quality Metric Rate], REMOVEFILTERS ( 'Data Quality Metrics'[stage] ), 'Data Quality Metrics'[stage] = "Processed" )
+		formatString: 0.000%
+		displayFolder: Data Quality
+		lineageTag: 7d8a334d-9921-4a65-a418-2bc20a2d8bf5
+
+	measure 'Data Quality Improvement' = ( [Processed Data Quality Rate] - [Raw Data Quality Rate] ) * 100
+		formatString: +0.000 "pp";-0.000 "pp";0.000 "pp"
+		displayFolder: Data Quality
+		lineageTag: 95a3976e-f9c5-483e-930f-52554b29f6fc
+
+	column metric_name
+		dataType: string
+		lineageTag: 52b87dc8-7488-4428-b43c-7aedf5283e90
+		summarizeBy: none
+		sourceColumn: metric_name
+
+	column stage
+		dataType: string
+		lineageTag: 12d7d13e-7553-4318-be2f-ec7d25cae852
+		summarizeBy: none
+		sourceColumn: stage
+
+	column passed_records
+		dataType: int64
+		lineageTag: b238da73-f296-4ceb-8df3-b75c7064ec6a
+		summarizeBy: sum
+		sourceColumn: passed_records
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_records
+		dataType: int64
+		lineageTag: 20eaa16f-c17b-4198-ad0f-c29a244774de
+		summarizeBy: sum
+		sourceColumn: total_records
+
+		annotation SummarizationSetBy = Automatic
+
+	column rate
+		dataType: double
+		lineageTag: 6c1d7df0-0ebf-49f7-8f41-62c1735465eb
+		summarizeBy: sum
+		sourceColumn: rate
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: 0a96051d-d66b-4d0b-a0e1-c8a986400de5
+		summarizeBy: none
+		sourceColumn: description
+
+	column assessment_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 71320368-7fd4-45f0-b6e4-413689325eee
+		summarizeBy: none
+		sourceColumn: assessment_date
+
+		variation Variation
+			isDefault
+			relationship: c4b64b4b-5bff-45f5-aebb-78843c4b665a
+			defaultHierarchy: LocalDateTable_2a7b7131-5055-4220-83ac-48f7d319b927.'Date Hierarchy'
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Metric Label' = SWITCH ( 'Data Quality Metrics'[metric_name], "completeness_rate", "Completeness", "overall_data_quality_score", "Overall quality score", "referential_integrity_rate", "Referential integrity", "uniqueness_rate", "Uniqueness", "validity_rate", "Validity", "Other" )
+		dataType: string
+		lineageTag: 21641b4b-2853-4adb-aa0d-62a8f54b97ef
+		summarizeBy: none
+
+	partition 'Data Quality Metrics' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="data_quality_metrics"]}[Data]
+				in
+					Data
+

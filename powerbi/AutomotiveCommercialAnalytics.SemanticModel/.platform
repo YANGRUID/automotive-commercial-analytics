@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Automotive Commercial Analytics",
+    "description": "PostgreSQL-backed automotive marketplace semantic model"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a6de1b7e-7ad7-4f8f-b22e-bfe2d2fc9b61"
+  }
+}

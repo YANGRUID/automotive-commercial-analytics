@@ -1,0 +1,260 @@
+table 'Fact Inquiry'
+	lineageTag: 04618eaa-f83b-4fc5-95cd-c2e9865923ff
+
+	measure 'Total Inquiries' = DISTINCTCOUNT ( 'Fact Inquiry'[inquiry_id] )
+		formatString: #,##0
+		displayFolder: Volume
+		lineageTag: a319ee8c-e02f-473a-9340-7b975a6ea6b4
+
+	measure 'Converted Inquiries' = CALCULATE ( [Total Inquiries], KEEPFILTERS ( 'Fact Inquiry'[conversion_flag] = TRUE () ) )
+		formatString: #,##0
+		displayFolder: Conversion
+		lineageTag: f942c03b-317d-4135-8108-0da175505b45
+
+	measure 'Conversion Rate' = DIVIDE ( [Converted Inquiries], [Total Inquiries] )
+		formatString: 0.0%
+		displayFolder: Conversion
+		lineageTag: a82a6194-781b-4068-8773-ad5518ae058a
+
+	measure 'Average Quotes per Inquiry' = DIVIDE ( [Total Quotes], [Total Inquiries] )
+		formatString: 0.00
+		displayFolder: Volume
+		lineageTag: de620f13-3a5d-46e8-9331-c3444f6b6638
+
+	measure 'Average Days to Conversion' = CALCULATE ( AVERAGE ( 'Fact Inquiry'[days_to_conversion] ), KEEPFILTERS ( 'Fact Inquiry'[conversion_flag] = TRUE () ) )
+		formatString: 0.0 "days"
+		displayFolder: Conversion
+		lineageTag: 05f5839f-2a64-44d5-a2f4-0a063acc2b4e
+
+	measure 'Inquiries Under 8h SLA' = CALCULATE ( [Total Inquiries], KEEPFILTERS ( 'Fact Inquiry'[fastest_response_hours] < 8 ) )
+		formatString: #,##0
+		displayFolder: Conversion
+		lineageTag: 8d5f8789-b862-45c1-9525-94134dc7e6b4
+
+	measure '8h SLA Compliance Rate' = DIVIDE ( [Inquiries Under 8h SLA], [Total Inquiries] )
+		formatString: 0.0%
+		displayFolder: Conversion
+		lineageTag: e5befa3b-e3da-406f-be90-4eca3fcb6dd4
+
+	measure 'Average Highest Quote' = AVERAGE ( 'Fact Inquiry'[highest_quote] )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: f3b06932-ae22-46bb-8f68-5bf8b54b1d54
+
+	measure 'Average Lowest Quote' = AVERAGE ( 'Fact Inquiry'[lowest_quote] )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: 82206433-d279-4008-8a2c-56371b79efe5
+
+	measure 'Average Quote Spread' = AVERAGE ( 'Fact Inquiry'[quote_spread] )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: ea4b017f-fd53-486c-afd6-4441763dadb6
+
+	measure 'Average Quote Spread %' = AVERAGE ( 'Fact Inquiry'[quote_spread_pct] )
+		formatString: 0.0%
+		displayFolder: Pricing
+		lineageTag: b119524f-b905-489a-8d8b-f0589dc71093
+
+	measure 'Average Sale Value' = CALCULATE ( AVERAGE ( 'Fact Inquiry'[final_sale_price] ), KEEPFILTERS ( 'Fact Inquiry'[conversion_flag] = TRUE () ) )
+		formatString: CHF #,##0
+		displayFolder: Pricing
+		lineageTag: 3e86c188-a6d2-4024-a100-271495cdd50a
+
+	measure 'Average Fastest Response Time' = AVERAGE ( 'Fact Inquiry'[fastest_response_hours] )
+		formatString: 0.0 "h"
+		displayFolder: Dealer
+		lineageTag: 321aa2be-8900-497b-a48d-4da759dc15e3
+
+	measure 'Previous Month Inquiries' = CALCULATE ( [Total Inquiries], DATEADD ( 'Dim Date'[date], -1, MONTH ) )
+		formatString: #,##0
+		displayFolder: Time Intelligence
+		lineageTag: 385855c2-e27d-4185-9090-041f526d549a
+
+	measure 'Month-over-Month Inquiry Growth' = DIVIDE ( [Total Inquiries] - [Previous Month Inquiries], [Previous Month Inquiries] )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Time Intelligence
+		lineageTag: 93591e8b-2487-4ef9-8c5a-c9032e35131c
+
+	measure 'Previous Year Inquiries' = CALCULATE ( [Total Inquiries], SAMEPERIODLASTYEAR ( 'Dim Date'[date] ) )
+		formatString: #,##0
+		displayFolder: Time Intelligence
+		lineageTag: b2fecab8-a540-453f-bde4-86298e78afa7
+
+	measure 'Year-over-Year Inquiry Growth' = DIVIDE ( [Total Inquiries] - [Previous Year Inquiries], [Previous Year Inquiries] )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Time Intelligence
+		lineageTag: b96c52ba-48f1-4926-a4d2-f26a1c3cf028
+
+	measure 'Previous Month Conversion Rate' = CALCULATE ( [Conversion Rate], DATEADD ( 'Dim Date'[date], -1, MONTH ) )
+		formatString: 0.0%
+		displayFolder: Time Intelligence
+		lineageTag: 6bbe0ce8-8ea8-46b4-ac36-7d9ae8bc8ad1
+
+	measure 'Conversion Rate Change' = [Conversion Rate] - [Previous Month Conversion Rate]
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Time Intelligence
+		lineageTag: 164011e2-2540-4ffe-8f45-8398fce15257
+
+	measure 'Rolling 3M Conversion Rate' = VAR LastVisibleDate = MAX ( 'Dim Date'[date] ) VAR ThreeMonthWindow = DATESINPERIOD ( 'Dim Date'[date], LastVisibleDate, -3, MONTH ) RETURN DIVIDE ( CALCULATE ( [Converted Inquiries], ThreeMonthWindow ), CALCULATE ( [Total Inquiries], ThreeMonthWindow ) )
+		formatString: 0.0%
+		displayFolder: Time Intelligence
+		lineageTag: 17781313-0db7-4f6c-9285-6f4734ef52fd
+
+	column inquiry_id
+		dataType: string
+		isHidden
+		lineageTag: c56d072a-c092-4482-b5e8-d4187b54dd63
+		summarizeBy: none
+		sourceColumn: inquiry_id
+
+	column customer_id
+		dataType: string
+		isHidden
+		lineageTag: 43772862-ac60-49e4-b130-c17cbda692ed
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column vehicle_id
+		dataType: string
+		isHidden
+		lineageTag: cd867570-0b37-483c-815d-6e0bc38a6958
+		summarizeBy: none
+		sourceColumn: vehicle_id
+
+	column inquiry_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 28c017a6-9add-4991-b2fa-4a63a5fde9f5
+		summarizeBy: none
+		sourceColumn: inquiry_date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column lead_source
+		dataType: string
+		lineageTag: f3658eb7-32ed-42a3-928f-6d4b9c546b3c
+		summarizeBy: none
+		sourceColumn: lead_source
+
+	column status
+		dataType: string
+		lineageTag: b04a6e85-ad22-4fde-9e6f-167a09c80704
+		summarizeBy: none
+		sourceColumn: status
+
+	column final_sale_price
+		dataType: double
+		lineageTag: e48850b0-c756-49f9-b3bd-694ad9cfbf63
+		summarizeBy: sum
+		sourceColumn: final_sale_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column winning_dealer_id
+		dataType: string
+		isHidden
+		lineageTag: 97d0eb53-a1b9-4797-ba46-2851c7df893b
+		summarizeBy: none
+		sourceColumn: winning_dealer_id
+
+	column conversion_flag
+		dataType: boolean
+		lineageTag: bdd8de55-103c-4d01-ac17-0c9bf74627d0
+		summarizeBy: none
+		sourceColumn: conversion_flag
+
+	column days_to_conversion
+		dataType: int64
+		lineageTag: 91002513-3f0d-4cf1-a010-34aea24aa381
+		summarizeBy: none
+		sourceColumn: days_to_conversion
+
+	column quote_count
+		dataType: int64
+		lineageTag: e2cc4bfe-cd21-4d0d-94a9-90219df102e2
+		summarizeBy: none
+		sourceColumn: quote_count
+
+	column highest_quote
+		dataType: double
+		lineageTag: 1733d553-e307-46e1-b6a1-83ac5f4e2994
+		summarizeBy: sum
+		sourceColumn: highest_quote
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lowest_quote
+		dataType: double
+		lineageTag: dea25ebd-2fbe-4e05-a851-39fc337ec4ad
+		summarizeBy: sum
+		sourceColumn: lowest_quote
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column average_quote
+		dataType: double
+		lineageTag: 8c52d411-9006-4bec-9138-f415913027cf
+		summarizeBy: sum
+		sourceColumn: average_quote
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fastest_response_hours
+		dataType: double
+		lineageTag: cae1f4eb-7277-4041-8288-b5d500ee3935
+		summarizeBy: none
+		sourceColumn: fastest_response_hours
+
+	column quote_spread
+		dataType: double
+		lineageTag: 73702efa-7454-4e99-b600-da2ed8d49718
+		summarizeBy: sum
+		sourceColumn: quote_spread
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column quote_spread_pct
+		dataType: double
+		lineageTag: 07f3b576-bc60-4db7-af06-fadb03044870
+		summarizeBy: none
+		sourceColumn: quote_spread_pct
+
+	column vehicle_age_at_inquiry
+		dataType: int64
+		lineageTag: 893a931f-9d91-443f-9eec-d986104753ae
+		summarizeBy: none
+		sourceColumn: vehicle_age_at_inquiry
+
+	column 'Response Time Band' = SWITCH ( TRUE (), 'Fact Inquiry'[fastest_response_hours] < 2, "Under 2 hours", 'Fact Inquiry'[fastest_response_hours] < 4, "2-4 hours", 'Fact Inquiry'[fastest_response_hours] < 8, "4-8 hours", 'Fact Inquiry'[fastest_response_hours] < 12, "8-12 hours", "12+ hours" )
+		dataType: string
+		lineageTag: c9cdf038-2043-4f6d-b21a-b4df3ba29e6f
+		summarizeBy: none
+		sortByColumn: 'Response Time Band Sort'
+
+	column 'Response Time Band Sort' = SWITCH ( TRUE (), 'Fact Inquiry'[fastest_response_hours] < 2, 1, 'Fact Inquiry'[fastest_response_hours] < 4, 2, 'Fact Inquiry'[fastest_response_hours] < 8, 3, 'Fact Inquiry'[fastest_response_hours] < 12, 4, 5 )
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a3e60dff-7b05-4dbc-bb2f-030e0f9eaad4
+		summarizeBy: none
+
+	partition 'Fact Inquiry' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="fact_inquiry"]}[Data]
+				in
+					Data
+

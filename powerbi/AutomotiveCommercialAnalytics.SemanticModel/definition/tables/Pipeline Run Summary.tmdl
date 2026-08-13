@@ -1,0 +1,85 @@
+table 'Pipeline Run Summary'
+	lineageTag: ae171862-3955-4ab9-95d9-3b56838c5b64
+
+	measure 'Raw Records' = SUM ( 'Pipeline Run Summary'[raw_records] )
+		formatString: #,##0
+		displayFolder: Data Quality
+		lineageTag: e5fb33cb-5ece-4c93-ab2a-4ecfdfa02249
+
+	measure 'Clean Records' = SUM ( 'Pipeline Run Summary'[clean_records] )
+		formatString: #,##0
+		displayFolder: Data Quality
+		lineageTag: 511e2b23-4819-4b54-9d19-3b53cbd791a5
+
+	measure 'Rejected Records' = SUM ( 'Pipeline Run Summary'[quarantined_records] )
+		formatString: #,##0
+		displayFolder: Data Quality
+		lineageTag: b26dd14b-5e27-40aa-aed7-dea575bf98cd
+
+	measure 'Loaded Records' = SUM ( 'Pipeline Run Summary'[loaded_records] )
+		formatString: #,##0
+		displayFolder: Data Quality
+		lineageTag: c02860a3-e5f7-4a87-8785-215c080f31c8
+
+	column table_name
+		dataType: string
+		lineageTag: 3e7c0837-f997-4b8d-a321-fd33e9a9da0d
+		summarizeBy: none
+		sourceColumn: table_name
+
+	column raw_records
+		dataType: int64
+		lineageTag: 5100cc18-e119-468c-a1ea-070676dcfaea
+		summarizeBy: none
+		sourceColumn: raw_records
+
+	column duplicate_records
+		dataType: int64
+		lineageTag: 3d0791c4-7bd0-40b2-9d22-6de569d40d69
+		summarizeBy: none
+		sourceColumn: duplicate_records
+
+	column corrected_records
+		dataType: int64
+		lineageTag: 3678e56e-1a6d-4654-8aa2-1b519fd58406
+		summarizeBy: none
+		sourceColumn: corrected_records
+
+	column quarantined_records
+		dataType: int64
+		lineageTag: 4c9efc03-6cbb-443c-984d-9974b542f609
+		summarizeBy: none
+		sourceColumn: quarantined_records
+
+	column clean_records
+		dataType: int64
+		lineageTag: 77aeb21a-534c-47c4-bd02-d1e16ba7e79c
+		summarizeBy: none
+		sourceColumn: clean_records
+
+	column loaded_records
+		dataType: int64
+		lineageTag: e2cc236f-4463-45e3-ae51-2e971a98aafe
+		summarizeBy: none
+		sourceColumn: loaded_records
+
+	column load_status
+		dataType: string
+		lineageTag: 2d4df701-01c5-4a55-8aa3-269c29615408
+		summarizeBy: none
+		sourceColumn: load_status
+
+	column 'Pipeline Stage' = SWITCH ( 'Pipeline Run Summary'[table_name], "dim_customer", "Customer dimension", "dim_vehicle", "Vehicle dimension", "dim_dealer", "Dealer dimension", "fact_inquiry", "Inquiry fact", "fact_quote", "Quote fact", "dim_date", "Date dimension", "Other" )
+		dataType: string
+		lineageTag: c143068e-7f26-4d7e-9529-29b709c582e5
+		summarizeBy: none
+
+	partition 'Pipeline Run Summary' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="pipeline_run_summary"]}[Data]
+				in
+					Data
+

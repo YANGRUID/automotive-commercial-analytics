@@ -1,0 +1,10 @@
+expression pServer = "localhost:5432" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 81d079cc-4e86-4af8-ae1b-285ff6b11112
+
+	annotation PBI_ResultType = Text
+
+expression pDatabase = "automotive_analytics" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 83350acd-71b0-4d99-b45a-9b72a6e87866
+
+	annotation PBI_ResultType = Text
+

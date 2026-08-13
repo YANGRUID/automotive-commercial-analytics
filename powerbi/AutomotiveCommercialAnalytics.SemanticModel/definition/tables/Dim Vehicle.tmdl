@@ -1,0 +1,81 @@
+table 'Dim Vehicle'
+	lineageTag: 62dfccf7-3c27-46cd-93d0-dfd96f9e811e
+
+	column vehicle_id
+		dataType: string
+		isHidden
+		lineageTag: baf314c7-5e95-4335-a061-2788fb011327
+		summarizeBy: none
+		sourceColumn: vehicle_id
+
+	column brand
+		dataType: string
+		lineageTag: 8ba70e77-6188-4781-9c26-c96b1cb4f3df
+		summarizeBy: none
+		sourceColumn: brand
+
+	column model
+		dataType: string
+		lineageTag: 64ab3295-39ad-4def-b014-bdedd032c478
+		summarizeBy: none
+		sourceColumn: model
+
+	column vehicle_type
+		dataType: string
+		lineageTag: 8dff501d-b0c2-4f9c-809f-60cd8540609c
+		summarizeBy: none
+		sourceColumn: vehicle_type
+
+	column fuel_type
+		dataType: string
+		lineageTag: a3a1e989-97e9-4c72-a507-b4d55e1b53e1
+		summarizeBy: none
+		sourceColumn: fuel_type
+
+	column manufacture_year
+		dataType: int64
+		lineageTag: 86d067db-f373-4a65-b213-4e1a543827da
+		summarizeBy: none
+		sourceColumn: manufacture_year
+
+	column mileage_km
+		dataType: int64
+		lineageTag: 0b88d501-dd86-43fe-a4be-f67b847a28be
+		summarizeBy: none
+		sourceColumn: mileage_km
+
+	column estimated_market_value
+		dataType: double
+		lineageTag: 856b9232-1d85-40e0-9818-b4164b9a7b88
+		summarizeBy: none
+		sourceColumn: estimated_market_value
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vehicle_condition
+		dataType: string
+		lineageTag: e22b6cc6-3652-4e2f-a018-81f8f14f2ebc
+		summarizeBy: none
+		sourceColumn: vehicle_condition
+
+	column mileage_bracket
+		dataType: string
+		lineageTag: efcb80df-1985-43e9-865b-ad45043763d5
+		summarizeBy: none
+		sourceColumn: mileage_bracket
+
+	column market_value_band
+		dataType: string
+		lineageTag: 4c654b40-ee54-43e7-9a03-73089a5fe2fc
+		summarizeBy: none
+		sourceColumn: market_value_band
+
+	partition 'Dim Vehicle' = m
+		mode: import
+		source =
+				let
+					Source = PostgreSQL.Database("10.211.55.2:5432", "automotive_analytics", [CreateNavigationProperties=false]),
+					Data = Source{[Schema="automotive_analytics", Item="dim_vehicle"]}[Data]
+				in
+					Data
+
